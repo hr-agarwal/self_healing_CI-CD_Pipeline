@@ -1,0 +1,44 @@
+======================================================================
+missing_app_init
+  PR https://github.com/Lin-2352/self-healing-cicd-demo/pull/30 (48s)
+  heal commits (trailers): [1]
+  -> green | attempts [1] | final smoke rc=0 golden=True | push->green 70s
+======================================================================
+typo_method
+  PR https://github.com/Lin-2352/self-healing-cicd-demo/pull/31 (39s)
+  heal commits (trailers): [1]
+  -> green | attempts [1] | final smoke rc=0 golden=True | push->green 60s
+======================================================================
+missing_require
+  PR https://github.com/Lin-2352/self-healing-cicd-demo/pull/32 (37s)
+  heal commits (trailers): [1]
+  -> green | attempts [1] | final smoke rc=0 golden=True | push->green 61s
+======================================================================
+syntax_missing_brace
+  PR https://github.com/Lin-2352/self-healing-cicd-demo/pull/33 (46s)
+  heal commits (trailers): [1]
+  -> green | attempts [1] | final smoke rc=0 golden=True | push->green 65s
+======================================================================
+wrong_status_check
+  PR https://github.com/Lin-2352/self-healing-cicd-demo/pull/34 (37s)
+  heal commits (trailers): [1]
+  -> green | attempts [1] | final smoke rc=0 golden=True | push->green 64s
+======================================================================
+multi_hunk
+  PR https://github.com/Lin-2352/self-healing-cicd-demo/pull/35 (39s)
+  heal commits (trailers): [1]
+  heal commits (trailers): [1, 2]
+  -> green | attempts [1, 2] | final smoke rc=0 golden=False | push->green 173s
+======================================================================
+callback_arity
+  PR https://github.com/Lin-2352/self-healing-cicd-demo/pull/36 (43s)
+  heal commits (trailers): [1]
+  -> stalled | attempts [1] | final smoke rc=1 golden=False 
+
+missing_app_init         green    attempts=[1] smoke_rc=0
+typo_method              green    attempts=[1] smoke_rc=0
+missing_require          green    attempts=[1] smoke_rc=0
+syntax_missing_brace     green    attempts=[1] smoke_rc=0
+wrong_status_check       green    attempts=[1] smoke_rc=0
+multi_hunk               green    attempts=[1, 2] smoke_rc=0
+callback_arity           stalled  attempts=[1] smoke_rc=1

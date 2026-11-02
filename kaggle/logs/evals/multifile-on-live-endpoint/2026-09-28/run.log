@@ -1,0 +1,57 @@
+r0 M  helper_throws                  func=0 file=src/format.js      right=1 tok=135    11.4s 
+r0 M  readme_first_then_code         func=1 file=src/app.js         right=1 tok=128     7.9s 
+r0 M  second_changed_file_buggy      func=1 file=src/format.js      right=1 tok=148     8.3s 
+r0 M  test_exposes_latent_bug        func=0 file=src/format.js      right=1 tok=177    11.5s 
+r0 M  wrong_require_path             func=1 file=test/api.test.js   right=1 tok=124     8.6s 
+r0 M  signature_changed_caller_not   func=0 file=None               right=0 tok=206     9.7s file_path "src/app.js" is not one of the files sho
+r1 M  helper_throws                  func=0 file=src/format.js      right=1 tok=137     6.2s 
+r1 M  readme_first_then_code         func=1 file=src/app.js         right=1 tok=129     7.5s 
+r1 M  second_changed_file_buggy      func=1 file=src/format.js      right=1 tok=146     8.8s 
+r1 M  test_exposes_latent_bug        func=0 file=src/format.js      right=1 tok=177     8.2s 
+r1 M  wrong_require_path             func=1 file=test/api.test.js   right=1 tok=126     6.4s 
+r1 M  signature_changed_caller_not   func=0 file=None               right=0 tok=202     8.6s file_path "src/app.js" is not one of the files sho
+r2 M  helper_throws                  func=0 file=src/format.js      right=1 tok=135     6.5s 
+r2 M  readme_first_then_code         func=1 file=src/app.js         right=1 tok=129     6.3s 
+r2 M  second_changed_file_buggy      func=1 file=src/format.js      right=1 tok=146     6.4s 
+r2 M  test_exposes_latent_bug        func=0 file=src/format.js      right=1 tok=242    10.1s 
+r2 M  wrong_require_path             func=1 file=test/api.test.js   right=1 tok=124     6.3s 
+r2 M  signature_changed_caller_not   func=0 file=None               right=0 tok=206     9.0s file_path "src/app.js" is not one of the files sho
+r0 B  missing_app_init               func=1 file=test.js            right=1 tok=173     9.8s 
+r0 B  typo_method                    func=1 file=test.js            right=1 tok=124     8.3s 
+r0 B  missing_require                func=1 file=test.js            right=1 tok=127     8.4s 
+r0 B  syntax_missing_brace           func=1 file=test.js            right=1 tok=350    16.0s 
+r0 B  wrong_status_check             func=1 file=test.js            right=1 tok=133     8.4s 
+r1 B  missing_app_init               func=1 file=test.js            right=1 tok=173     7.5s 
+r1 B  typo_method                    func=1 file=test.js            right=1 tok=129     6.2s 
+r1 B  missing_require                func=1 file=test.js            right=1 tok=127     6.2s 
+r1 B  syntax_missing_brace           func=1 file=test.js            right=1 tok=350    13.7s 
+r1 B  wrong_status_check             func=1 file=test.js            right=1 tok=127     6.2s 
+r2 B  missing_app_init               func=1 file=test.js            right=1 tok=173     7.6s 
+r2 B  typo_method                    func=1 file=test.js            right=1 tok=130     6.2s 
+r2 B  missing_require                func=1 file=test.js            right=1 tok=128     6.1s 
+r2 B  syntax_missing_brace           func=1 file=test.js            right=1 tok=350    13.7s 
+r2 B  wrong_status_check             func=1 file=test.js            right=1 tok=129     6.4s 
+r0 MT helper_throws                  func=0 file=src/format.js      right=1 tok=824    40.0s 
+r0 MT readme_first_then_code         func=1 file=src/app.js         right=1 tok=358    17.9s 
+r0 MT second_changed_file_buggy      func=1 file=src/format.js      right=1 tok=409    19.0s 
+r0 MT test_exposes_latent_bug        func=1 file=src/format.js      right=1 tok=1227   56.8s 
+r0 MT wrong_require_path             func=1 file=test/api.test.js   right=1 tok=525    26.3s 
+r0 MT signature_changed_caller_not   func=0 file=src/format.js      right=1 tok=1230   56.4s 
+r1 MT helper_throws                  func=1 file=src/format.js      right=1 tok=1125   49.0s 
+r1 MT readme_first_then_code         func=1 file=src/app.js         right=1 tok=719    31.8s 
+r1 MT second_changed_file_buggy      func=1 file=src/format.js      right=1 tok=392    18.9s 
+r1 MT test_exposes_latent_bug        func=1 file=src/format.js      right=1 tok=1297   55.7s 
+r1 MT wrong_require_path             func=1 file=test/api.test.js   right=1 tok=890    39.3s 
+r1 MT signature_changed_caller_not   func=1 file=src/format.js      right=1 tok=1232   54.3s 
+r2 MT helper_throws                  func=1 file=src/format.js      right=1 tok=1138   53.7s 
+r2 MT readme_first_then_code         func=1 file=src/app.js         right=1 tok=588    24.4s 
+r2 MT second_changed_file_buggy      func=1 file=src/format.js      right=1 tok=610    25.7s 
+r2 MT test_exposes_latent_bug        func=1 file=src/format.js      right=1 tok=1263   55.7s 
+ERROR [WinError 10054] An existing connection was forcibly closed by the remote host
+ERROR [WinError 10054] An existing connection was forcibly closed by the remote host
+ARM M  healed 9/18  right file 15/18
+ARM B  healed 15/15  right file 15/15
+ARM MT healed 14/16  right file 16/16
+r2 MT wrong_require_path             func=1 file=test/api.test.js   right=1 tok=519    24.4s 
+r2 MT signature_changed_caller_not   func=1 file=src/format.js      right=1 tok=1252   57.3s 
+ARM MT healed 16/18  right file 18/18

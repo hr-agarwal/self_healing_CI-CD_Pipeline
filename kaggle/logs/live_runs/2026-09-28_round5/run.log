@@ -1,0 +1,22 @@
+======================================================================
+callback_arity
+  PR https://github.com/Lin-2352/self-healing-cicd-demo/pull/38 (42s)
+  heal commits (trailers): [1]
+  heal commits (trailers): [1, 2]
+  heal commits (trailers): [1, 2, 3]
+  -> green | attempts [1, 2, 3] | final smoke rc=0 golden=False | push->green 249s
+======================================================================
+multi_hunk
+  PR https://github.com/Lin-2352/self-healing-cicd-demo/pull/39 (38s)
+  heal commits (trailers): [1]
+  heal commits (trailers): [1, 2]
+  -> green | attempts [1, 2] | final smoke rc=0 golden=False | push->green 143s
+======================================================================
+missing_require
+  PR https://github.com/Lin-2352/self-healing-cicd-demo/pull/40 (34s)
+  heal commits (trailers): [1]
+  -> green | attempts [1] | final smoke rc=0 golden=True | push->green 54s
+
+callback_arity           green    attempts=[1, 2, 3] smoke_rc=0
+multi_hunk               green    attempts=[1, 2] smoke_rc=0
+missing_require          green    attempts=[1] smoke_rc=0

@@ -1,0 +1,15 @@
+======================================================================
+multi_hunk
+  PR https://github.com/Lin-2352/self-healing-cicd-demo/pull/29 (44s)
+  heal commits (trailers): [1]
+  heal commits (trailers): [1, 2]
+  -> green | attempts [1, 2] | final smoke rc=0 golden=False | push->green 151s
+
+callback_arity           gave_up  attempts=[1, 2, 3] smoke_rc=1
+multi_hunk               green    attempts=[1, 2] smoke_rc=0
+missing_app_init         green    attempts=[1] smoke_rc=0
+typo_method              green    attempts=[1] smoke_rc=0
+missing_require          green    attempts=[1] smoke_rc=0
+syntax_missing_brace     green    attempts=[1] smoke_rc=0
+wrong_status_check       green    attempts=[1] smoke_rc=0
+multi_hunk               green    attempts=[1, 2] smoke_rc=0

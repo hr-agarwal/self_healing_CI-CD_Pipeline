@@ -1,0 +1,284 @@
+[{"stream_name":"stdout","time":1.193643285,"data":"GPU: Tesla T4, 15360 MiB | Tesla T4, 15360 MiB | total 30720 MiB\n"}
+,{"stream_name":"stdout","time":1.193683857,"data":"\n"}
+,{"stream_name":"stdout","time":1.19368931,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":1.193693499,"data":"PREFLIGHT: express + every tree\n"}
+,{"stream_name":"stdout","time":1.193697381,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":5.769568957,"data":"npm install express rc=0\n"}
+,{"stream_name":"stdout","time":13.96316441,"data":"{\"golden\": 0, \"cases\": {\"missing_app_init\": {\"golden\": 0, \"broken\": 1}, \"typo_method\": {\"golden\": 0, \"broken\": 1}, \"missing_require\": {\"golden\": 0, \"broken\": 1}, \"syntax_missing_brace\": {\"golden\": 0, \"broken\": 1}, \"wrong_status_check\": {\"golden\": 0, \"broken\": 1}, \"https_protocol_mismatch\": {\"golden\": 0, \"broken\": 1}, \"callback_arity\": {\"golden\": 0, \"broken\": 1}, \"uninterpolated_url\": {\"golden\": 0, \"broken\": 1}, \"inverted_status_check\": {\"golden\": 0, \"broken\": 1}, \"route_wrong_status\": {\"golden\": 0, \"broken\": 1}, \"multi_hunk\": {\"golden\": 0, \"broken\": 1}, \"helper_throws\": {\"golden\": 0, \"broken\": 1}, \"readme_first_then_code\": {\"golden\": 0, \"broken\": 1}, \"second_changed_file_buggy\": {\"golden\": 0, \"broken\": 1}, \"test_exposes_latent_bug\": {\"golden\": 0, \"broken\": 1}, \"wrong_require_path\": {\"golden\": 0, \"broken\": 1}, \"signature_changed_caller_not\": {\"golden\": 0, \"broken\": 1}}}\n"}
+,{"stream_name":"stdout","time":15.089069668,"data":"\n"}
+,{"stream_name":"stdout","time":15.089112743,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":15.089124557,"data":"SERVER BINARY\n"}
+,{"stream_name":"stdout","time":15.08912852,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":17.94110688,"data":"\n"}
+,{"stream_name":"stdout","time":17.941153579,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":17.941162012,"data":"MODEL unsloth-ud-q4kxl  (unsloth/Qwen3.8-27B-GGUF)\n"}
+,{"stream_name":"stdout","time":17.941167014,"data":"==============================================================================\n"}
+,{"stream_name":"stderr","time":18.263531921,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":96.698937983,"data":"  got Qwen3.8-27B-UD-Q4_K_XL.gguf 17.6 GB in 79s\n"}
+,{"stream_name":"stdout","time":219.99574369,"data":"  ctx=131072 boot 88s | 23.4 tok/s | accept 0.641 | VRAM [13285, 13285]\n"}
+,{"stream_name":"stdout","time":231.437430837,"data":"unsloth-ud-q4kxl         r0 control missing_app_init               F func=1 file=test.js          tok=176    10.7s \n"}
+,{"stream_name":"stdout","time":239.961876094,"data":"unsloth-ud-q4kxl         r0 control typo_method                    F func=1 file=test.js          tok=123     8.2s \n"}
+,{"stream_name":"stdout","time":248.654119343,"data":"unsloth-ud-q4kxl         r0 control missing_require                F func=1 file=test.js          tok=128     8.4s \n"}
+,{"stream_name":"stdout","time":267.058236988,"data":"unsloth-ud-q4kxl         r0 control syntax_missing_brace           F func=1 file=test.js          tok=350    18.1s \n"}
+,{"stream_name":"stdout","time":276.13107371,"data":"unsloth-ud-q4kxl         r0 control wrong_status_check             F func=1 file=test.js          tok=126     8.8s \n"}
+,{"stream_name":"stdout","time":285.873932041,"data":"unsloth-ud-q4kxl         r0 hard    https_protocol_mismatch        F func=1 file=test.js          tok=119     9.4s \n"}
+,{"stream_name":"stdout","time":330.31953792,"data":"unsloth-ud-q4kxl         r0 hard    https_protocol_mismatch        T func=1 file=test.js          tok=823    44.1s \n"}
+,{"stream_name":"stdout","time":342.829228718,"data":"unsloth-ud-q4kxl         r0 hard    callback_arity                 F func=0 file=test.js          tok=203    12.3s \n"}
+,{"stream_name":"stdout","time":416.672565196,"data":"unsloth-ud-q4kxl         r0 hard    callback_arity                 T func=1 file=test.js          tok=1458   73.5s \n"}
+,{"stream_name":"stdout","time":426.458700255,"data":"unsloth-ud-q4kxl         r0 hard    uninterpolated_url             F func=1 file=test.js          tok=132     9.5s \n"}
+,{"stream_name":"stdout","time":468.519178591,"data":"unsloth-ud-q4kxl         r0 hard    uninterpolated_url             T func=1 file=test.js          tok=775    41.7s \n"}
+,{"stream_name":"stdout","time":481.984245896,"data":"unsloth-ud-q4kxl         r0 hard    inverted_status_check          F func=1 file=test.js          tok=247    13.1s \n"}
+,{"stream_name":"stdout","time":538.845658391,"data":"unsloth-ud-q4kxl         r0 hard    inverted_status_check          T func=1 file=test.js          tok=1178   56.5s \n"}
+,{"stream_name":"stdout","time":548.491142434,"data":"unsloth-ud-q4kxl         r0 hard    route_wrong_status             F func=1 file=test.js          tok=154     9.3s \n"}
+,{"stream_name":"stdout","time":581.565677815,"data":"unsloth-ud-q4kxl         r0 hard    route_wrong_status             T func=1 file=test.js          tok=638    32.7s \n"}
+,{"stream_name":"stdout","time":591.196372709,"data":"unsloth-ud-q4kxl         r0 hard    multi_hunk                     F func=0 file=test.js          tok=161     9.4s \n"}
+,{"stream_name":"stdout","time":656.893482776,"data":"unsloth-ud-q4kxl         r0 hard    multi_hunk                     T func=1 file=test.js          tok=1240   65.3s \n"}
+,{"stream_name":"stdout","time":668.145906647,"data":"unsloth-ud-q4kxl         r0 multi   helper_throws                  F func=0 file=src/format.js    tok=134    10.9s \n"}
+,{"stream_name":"stdout","time":736.837036573,"data":"unsloth-ud-q4kxl         r0 multi   helper_throws                  T func=1 file=src/format.js    tok=1174   68.4s \n"}
+,{"stream_name":"stdout","time":744.986823126,"data":"unsloth-ud-q4kxl         r0 multi   readme_first_then_code         F func=1 file=src/app.js       tok=128     7.8s \n"}
+,{"stream_name":"stdout","time":763.542276308,"data":"unsloth-ud-q4kxl         r0 multi   readme_first_then_code         T func=1 file=src/app.js       tok=320    18.2s \n"}
+,{"stream_name":"stdout","time":772.486736221,"data":"unsloth-ud-q4kxl         r0 multi   second_changed_file_buggy      F func=1 file=src/format.js    tok=146     8.6s \n"}
+,{"stream_name":"stdout","time":796.291667799,"data":"unsloth-ud-q4kxl         r0 multi   second_changed_file_buggy      T func=1 file=src/format.js    tok=442    23.5s \n"}
+,{"stream_name":"stdout","time":808.880802447,"data":"unsloth-ud-q4kxl         r0 multi   test_exposes_latent_bug        F func=0 file=src/format.js    tok=180    12.3s \n"}
+,{"stream_name":"stdout","time":874.472858698,"data":"unsloth-ud-q4kxl         r0 multi   test_exposes_latent_bug        T func=1 file=src/format.js    tok=1228   65.3s \n"}
+,{"stream_name":"stdout","time":884.263088133,"data":"unsloth-ud-q4kxl         r0 multi   wrong_require_path             F func=1 file=test/api.test.js tok=125     9.5s \n"}
+,{"stream_name":"stdout","time":922.105267655,"data":"unsloth-ud-q4kxl         r0 multi   wrong_require_path             T func=1 file=test/api.test.js tok=655    37.5s \n"}
+,{"stream_name":"stdout","time":933.030763819,"data":"unsloth-ud-q4kxl         r0 multi   signature_changed_caller_not   F func=0 file=None             tok=206    10.9s file_path \"src/app.js\" is not one of the files sho\n"}
+,{"stream_name":"stdout","time":996.996919872,"data":"unsloth-ud-q4kxl         r0 multi   signature_changed_caller_not   T func=0 file=src/format.js    tok=1228   63.6s \n"}
+,{"stream_name":"stdout","time":1008.272120402,"data":"unsloth-ud-q4kxl         r1 control missing_app_init               F func=1 file=test.js          tok=176    10.9s \n"}
+,{"stream_name":"stdout","time":1017.426531508,"data":"unsloth-ud-q4kxl         r1 control typo_method                    F func=1 file=test.js          tok=128     8.8s \n"}
+,{"stream_name":"stdout","time":1026.401389259,"data":"unsloth-ud-q4kxl         r1 control missing_require                F func=1 file=test.js          tok=127     8.7s \n"}
+,{"stream_name":"stdout","time":1045.180672651,"data":"unsloth-ud-q4kxl         r1 control syntax_missing_brace           F func=1 file=test.js          tok=360    18.5s \n"}
+,{"stream_name":"stdout","time":1053.991606366,"data":"unsloth-ud-q4kxl         r1 control wrong_status_check             F func=1 file=test.js          tok=126     8.5s \n"}
+,{"stream_name":"stdout","time":1062.904268699,"data":"unsloth-ud-q4kxl         r1 hard    https_protocol_mismatch        F func=1 file=test.js          tok=119     8.6s \n"}
+,{"stream_name":"stdout","time":1095.102312159,"data":"unsloth-ud-q4kxl         r1 hard    https_protocol_mismatch        T func=1 file=test.js          tok=550    31.8s \n"}
+,{"stream_name":"stdout","time":1107.847666172,"data":"unsloth-ud-q4kxl         r1 hard    callback_arity                 F func=0 file=test.js          tok=204    12.5s \n"}
+,{"stream_name":"stdout","time":1218.336526611,"data":"unsloth-ud-q4kxl         r1 hard    callback_arity                 T func=1 file=test.js          tok=2252  110.2s \n"}
+,{"stream_name":"stdout","time":1228.133040886,"data":"unsloth-ud-q4kxl         r1 hard    uninterpolated_url             F func=1 file=test.js          tok=131     9.5s \n"}
+,{"stream_name":"stdout","time":1273.096820203,"data":"unsloth-ud-q4kxl         r1 hard    uninterpolated_url             T func=1 file=test.js          tok=833    44.6s \n"}
+,{"stream_name":"stdout","time":1286.676748207,"data":"unsloth-ud-q4kxl         r1 hard    inverted_status_check          F func=1 file=test.js          tok=246    13.2s \n"}
+,{"stream_name":"stdout","time":1366.377030679,"data":"unsloth-ud-q4kxl         r1 hard    inverted_status_check          T func=1 file=test.js          tok=1619   79.4s \n"}
+,{"stream_name":"stdout","time":1376.123648258,"data":"unsloth-ud-q4kxl         r1 hard    route_wrong_status             F func=1 file=test.js          tok=156     9.4s \n"}
+,{"stream_name":"stdout","time":1418.329609535,"data":"unsloth-ud-q4kxl         r1 hard    route_wrong_status             T func=1 file=test.js          tok=799    41.9s \n"}
+,{"stream_name":"stdout","time":1427.739477148,"data":"unsloth-ud-q4kxl         r1 hard    multi_hunk                     F func=0 file=test.js          tok=161     9.2s \n"}
+,{"stream_name":"stdout","time":1491.529762588,"data":"unsloth-ud-q4kxl         r1 hard    multi_hunk                     T func=1 file=test.js          tok=1231   63.4s \n"}
+,{"stream_name":"stdout","time":1502.73568252,"data":"unsloth-ud-q4kxl         r1 multi   helper_throws                  F func=0 file=src/format.js    tok=134    10.9s \n"}
+,{"stream_name":"stdout","time":1570.021372887,"data":"unsloth-ud-q4kxl         r1 multi   helper_throws                  T func=1 file=src/format.js    tok=1150   66.9s \n"}
+,{"stream_name":"stdout","time":1578.368566533,"data":"unsloth-ud-q4kxl         r1 multi   readme_first_then_code         F func=1 file=src/app.js       tok=128     8.0s \n"}
+,{"stream_name":"stdout","time":1603.937875396,"data":"unsloth-ud-q4kxl         r1 multi   readme_first_then_code         T func=1 file=src/app.js       tok=467    25.2s \n"}
+,{"stream_name":"stdout","time":1613.100555709,"data":"unsloth-ud-q4kxl         r1 multi   second_changed_file_buggy      F func=1 file=src/format.js    tok=148     8.8s \n"}
+,{"stream_name":"stdout","time":1644.521816512,"data":"unsloth-ud-q4kxl         r1 multi   second_changed_file_buggy      T func=1 file=src/format.js    tok=594    31.1s \n"}
+,{"stream_name":"stdout","time":1657.114238236,"data":"unsloth-ud-q4kxl         r1 multi   test_exposes_latent_bug        F func=0 file=src/format.js    tok=179    12.3s \n"}
+,{"stream_name":"stdout","time":1717.897091904,"data":"unsloth-ud-q4kxl         r1 multi   test_exposes_latent_bug        T func=0 file=src/format.js    tok=1193   60.4s \n"}
+,{"stream_name":"stdout","time":1728.085202641,"data":"unsloth-ud-q4kxl         r1 multi   wrong_require_path             F func=1 file=test/api.test.js tok=123     9.9s \n"}
+,{"stream_name":"stdout","time":1752.769075352,"data":"unsloth-ud-q4kxl         r1 multi   wrong_require_path             T func=1 file=test/api.test.js tok=414    24.3s \n"}
+,{"stream_name":"stdout","time":1763.612059526,"data":"unsloth-ud-q4kxl         r1 multi   signature_changed_caller_not   F func=0 file=None             tok=202    10.8s file_path \"src/app.js\" is not one of the files sho\n"}
+,{"stream_name":"stdout","time":1832.463325708,"data":"unsloth-ud-q4kxl         r1 multi   signature_changed_caller_not   T func=0 file=src/format.js    tok=1225   68.5s \n"}
+,{"stream_name":"stdout","time":1832.471629069,"data":"\n"}
+,{"stream_name":"stdout","time":1832.471661797,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":1832.47166735,"data":"MODEL fable-cold-fusion-735  (DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF)\n"}
+,{"stream_name":"stdout","time":1832.471671932,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":1918.772659695,"data":"  got Qwen3.8-27B-TurboFCFusion-735-882-Here-Uncen-NEO-CODER-MAX-MTP-Q4_K_M.gguf 18.5 GB in 86s\n"}
+,{"stream_name":"stdout","time":2037.323980582,"data":"  ctx=131072 boot 93s | 17.6 tok/s | accept 0.602 | VRAM [13739, 13739]\n"}
+,{"stream_name":"stdout","time":2050.017962666,"data":"fable-cold-fusion-735    r0 control missing_app_init               F func=1 file=test.js          tok=150    12.0s \n"}
+,{"stream_name":"stdout","time":2059.873990813,"data":"fable-cold-fusion-735    r0 control typo_method                    F func=1 file=test.js          tok=104     9.5s \n"}
+,{"stream_name":"stdout","time":2070.713879309,"data":"fable-cold-fusion-735    r0 control missing_require                F func=1 file=test.js          tok=118    10.5s \n"}
+,{"stream_name":"stdout","time":2081.473619688,"data":"fable-cold-fusion-735    r0 control syntax_missing_brace           F func=1 file=test.js          tok=133    10.4s \n"}
+,{"stream_name":"stdout","time":2090.667723386,"data":"fable-cold-fusion-735    r0 control wrong_status_check             F func=1 file=test.js          tok=118     8.9s \n"}
+,{"stream_name":"stdout","time":2099.047451056,"data":"fable-cold-fusion-735    r0 hard    https_protocol_mismatch        F func=1 file=test.js          tok=94      8.1s \n"}
+,{"stream_name":"stdout","time":2111.484246706,"data":"fable-cold-fusion-735    r0 hard    https_protocol_mismatch        T func=1 file=test.js          tok=153    12.1s \n"}
+,{"stream_name":"stdout","time":2125.339844196,"data":"fable-cold-fusion-735    r0 hard    callback_arity                 F func=0 file=test.js          tok=196    13.7s \n"}
+,{"stream_name":"stdout","time":2151.425911696,"data":"fable-cold-fusion-735    r0 hard    callback_arity                 T func=0 file=test.js          tok=416    25.9s \n"}
+,{"stream_name":"stdout","time":2161.992481669,"data":"fable-cold-fusion-735    r0 hard    uninterpolated_url             F func=1 file=test.js          tok=130    10.2s \n"}
+,{"stream_name":"stdout","time":2176.408229867,"data":"fable-cold-fusion-735    r0 hard    uninterpolated_url             T func=1 file=test.js          tok=184    14.1s \n"}
+,{"stream_name":"stdout","time":2191.569980874,"data":"fable-cold-fusion-735    r0 hard    inverted_status_check          F func=1 file=test.js          tok=247    14.8s \n"}
+,{"stream_name":"stdout","time":2218.264548191,"data":"fable-cold-fusion-735    r0 hard    inverted_status_check          T func=1 file=test.js          tok=453    26.4s \n"}
+,{"stream_name":"stdout","time":2227.757673581,"data":"fable-cold-fusion-735    r0 hard    route_wrong_status             F func=1 file=test.js          tok=127     9.2s \n"}
+,{"stream_name":"stdout","time":2238.745539829,"data":"fable-cold-fusion-735    r0 hard    route_wrong_status             T func=1 file=test.js          tok=166    10.7s \n"}
+,{"stream_name":"stdout","time":2248.464270679,"data":"fable-cold-fusion-735    r0 hard    multi_hunk                     F func=0 file=test.js          tok=152     9.5s \n"}
+,{"stream_name":"stdout","time":2259.115351754,"data":"fable-cold-fusion-735    r0 hard    multi_hunk                     T func=0 file=test.js          tok=161    10.5s \n"}
+,{"stream_name":"stdout","time":2270.077381994,"data":"fable-cold-fusion-735    r0 multi   helper_throws                  F func=0 file=src/format.js    tok=109    10.6s \n"}
+,{"stream_name":"stdout","time":2283.936666991,"data":"fable-cold-fusion-735    r0 multi   helper_throws                  T func=0 file=src/format.js    tok=169    13.6s \n"}
+,{"stream_name":"stdout","time":2291.857153551,"data":"fable-cold-fusion-735    r0 multi   readme_first_then_code         F func=1 file=src/app.js       tok=94      7.6s \n"}
+,{"stream_name":"stdout","time":2306.568482915,"data":"fable-cold-fusion-735    r0 multi   readme_first_then_code         T func=1 file=src/app.js       tok=235    14.4s \n"}
+,{"stream_name":"stdout","time":2315.611087907,"data":"fable-cold-fusion-735    r0 multi   second_changed_file_buggy      F func=1 file=src/format.js    tok=127     8.7s \n"}
+,{"stream_name":"stdout","time":2328.688136759,"data":"fable-cold-fusion-735    r0 multi   second_changed_file_buggy      T func=1 file=src/format.js    tok=206    12.8s \n"}
+,{"stream_name":"stdout","time":2346.565478047,"data":"fable-cold-fusion-735    r0 multi   test_exposes_latent_bug        F func=0 file=src/format.js    tok=255    17.6s \n"}
+,{"stream_name":"stdout","time":2409.170702408,"data":"fable-cold-fusion-735    r0 multi   test_exposes_latent_bug        T func=1 file=src/format.js    tok=1142   62.3s \n"}
+,{"stream_name":"stdout","time":2419.984207846,"data":"fable-cold-fusion-735    r0 multi   wrong_require_path             F func=1 file=test/api.test.js tok=130    10.5s \n"}
+,{"stream_name":"stdout","time":2443.073407029,"data":"fable-cold-fusion-735    r0 multi   wrong_require_path             T func=1 file=test/api.test.js tok=351    22.8s \n"}
+,{"stream_name":"stdout","time":2452.504296175,"data":"fable-cold-fusion-735    r0 multi   signature_changed_caller_not   F func=0 file=None             tok=128     9.4s file_path \"src/app.js\" is not one of the files sho\n"}
+,{"stream_name":"stdout","time":2517.569568685,"data":"fable-cold-fusion-735    r0 multi   signature_changed_caller_not   T func=0 file=src/format.js    tok=1176   64.7s \n"}
+,{"stream_name":"stdout","time":2528.787045902,"data":"fable-cold-fusion-735    r1 control missing_app_init               F func=1 file=test.js          tok=152    10.9s \n"}
+,{"stream_name":"stdout","time":2537.620708774,"data":"fable-cold-fusion-735    r1 control typo_method                    F func=1 file=test.js          tok=98      8.5s \n"}
+,{"stream_name":"stdout","time":2547.081615264,"data":"fable-cold-fusion-735    r1 control missing_require                F func=1 file=test.js          tok=119     9.1s \n"}
+,{"stream_name":"stdout","time":2558.503807091,"data":"fable-cold-fusion-735    r1 control syntax_missing_brace           F func=1 file=test.js          tok=153    11.1s \n"}
+,{"stream_name":"stdout","time":2566.61416344,"data":"fable-cold-fusion-735    r1 control wrong_status_check             F func=1 file=test.js          tok=96      7.8s \n"}
+,{"stream_name":"stdout","time":2576.633802059,"data":"fable-cold-fusion-735    r1 hard    https_protocol_mismatch        F func=1 file=test.js          tok=120     9.7s \n"}
+,{"stream_name":"stdout","time":2589.660083248,"data":"fable-cold-fusion-735    r1 hard    https_protocol_mismatch        T func=1 file=test.js          tok=152    12.7s \n"}
+,{"stream_name":"stdout","time":2603.360048961,"data":"fable-cold-fusion-735    r1 hard    callback_arity                 F func=0 file=test.js          tok=196    13.5s \n"}
+,{"stream_name":"stdout","time":2620.697809736,"data":"fable-cold-fusion-735    r1 hard    callback_arity                 T func=0 file=test.js          tok=261    17.2s \n"}
+,{"stream_name":"stdout","time":2631.308281324,"data":"fable-cold-fusion-735    r1 hard    uninterpolated_url             F func=1 file=test.js          tok=130    10.3s \n"}
+,{"stream_name":"stdout","time":2645.21685063,"data":"fable-cold-fusion-735    r1 hard    uninterpolated_url             T func=1 file=test.js          tok=184    13.6s \n"}
+,{"stream_name":"stdout","time":2660.268673643,"data":"fable-cold-fusion-735    r1 hard    inverted_status_check          F func=1 file=test.js          tok=243    14.7s \n"}
+,{"stream_name":"stdout","time":2685.951056178,"data":"fable-cold-fusion-735    r1 hard    inverted_status_check          T func=1 file=test.js          tok=453    25.4s \n"}
+,{"stream_name":"stdout","time":2695.274467401,"data":"fable-cold-fusion-735    r1 hard    route_wrong_status             F func=1 file=test.js          tok=128     9.0s \n"}
+,{"stream_name":"stdout","time":2706.42943417,"data":"fable-cold-fusion-735    r1 hard    route_wrong_status             T func=1 file=test.js          tok=166    10.8s \n"}
+,{"stream_name":"stdout","time":2717.05685437,"data":"fable-cold-fusion-735    r1 hard    multi_hunk                     F func=0 file=test.js          tok=164    10.5s \n"}
+,{"stream_name":"stdout","time":2729.184726654,"data":"fable-cold-fusion-735    r1 hard    multi_hunk                     T func=0 file=test.js          tok=170    11.9s \n"}
+,{"stream_name":"stdout","time":2740.243803951,"data":"fable-cold-fusion-735    r1 multi   helper_throws                  F func=0 file=src/format.js    tok=113    10.7s \n"}
+,{"stream_name":"stdout","time":2760.617499937,"data":"fable-cold-fusion-735    r1 multi   helper_throws                  T func=0 file=src/format.js    tok=295    20.1s \n"}
+,{"stream_name":"stdout","time":2768.380624454,"data":"fable-cold-fusion-735    r1 multi   readme_first_then_code         F func=1 file=src/app.js       tok=94      7.4s \n"}
+,{"stream_name":"stdout","time":2785.487784793,"data":"fable-cold-fusion-735    r1 multi   readme_first_then_code         T func=1 file=src/app.js       tok=276    16.8s \n"}
+,{"stream_name":"stdout","time":2793.942599049,"data":"fable-cold-fusion-735    r1 multi   second_changed_file_buggy      F func=1 file=src/format.js    tok=122     8.1s \n"}
+,{"stream_name":"stdout","time":2808.697125448,"data":"fable-cold-fusion-735    r1 multi   second_changed_file_buggy      T func=1 file=src/format.js    tok=232    14.4s \n"}
+,{"stream_name":"stdout","time":2825.29777139,"data":"fable-cold-fusion-735    r1 multi   test_exposes_latent_bug        F func=0 file=src/format.js    tok=239    16.3s \n"}
+,{"stream_name":"stdout","time":2889.005544156,"data":"fable-cold-fusion-735    r1 multi   test_exposes_latent_bug        T func=0 file=src/format.js    tok=1175   63.4s \n"}
+,{"stream_name":"stdout","time":2899.206186669,"data":"fable-cold-fusion-735    r1 multi   wrong_require_path             F func=1 file=test/api.test.js tok=115     9.9s \n"}
+,{"stream_name":"stdout","time":2909.960667011,"data":"fable-cold-fusion-735    r1 multi   wrong_require_path             T func=1 file=test/api.test.js tok=184    10.4s \n"}
+,{"stream_name":"stdout","time":2919.48818696,"data":"fable-cold-fusion-735    r1 multi   signature_changed_caller_not   F func=0 file=None             tok=129     9.5s file_path \"src/app.js\" is not one of the files sho\n"}
+,{"stream_name":"stdout","time":2936.372202493,"data":"fable-cold-fusion-735    r1 multi   signature_changed_caller_not   T func=0 file=None             tok=295    16.8s file_path \"src/app.js\" is not one of the files sho\n"}
+,{"stream_name":"stdout","time":2936.407465313,"data":"\n"}
+,{"stream_name":"stdout","time":2936.407502922,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":2936.407510372,"data":"MODEL jumbo-fusion-747  (DavidAU/Qwen3.8-27B-Jumbo-Fusion-IQ-747-900-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF)\n"}
+,{"stream_name":"stdout","time":2936.407517266,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":3011.643222741,"data":"  got Qwen3.8-27B-Jumbo-FIQ-747-900-T-Brill-50X-NEO-MTP-Q4_K_M.gguf 16.8 GB in 75s\n"}
+,{"stream_name":"stdout","time":3127.911897266,"data":"  ctx=131072 boot 93s | 19.3 tok/s | accept 0.58 | VRAM [12921, 12921]\n"}
+,{"stream_name":"stdout","time":3139.932250394,"data":"jumbo-fusion-747         r0 control missing_app_init               F func=1 file=test.js          tok=154    11.2s \n"}
+,{"stream_name":"stdout","time":3148.946813561,"data":"jumbo-fusion-747         r0 control typo_method                    F func=1 file=test.js          tok=99      8.6s \n"}
+,{"stream_name":"stdout","time":3158.059451329,"data":"jumbo-fusion-747         r0 control missing_require                F func=1 file=test.js          tok=99      8.7s \n"}
+,{"stream_name":"stdout","time":3168.639778497,"data":"jumbo-fusion-747         r0 control syntax_missing_brace           F func=0 file=None             tok=125    10.5s Bad control character in string literal in JSON at\n"}
+,{"stream_name":"stdout","time":3176.945782255,"data":"jumbo-fusion-747         r0 control wrong_status_check             F func=1 file=test.js          tok=96      8.0s \n"}
+,{"stream_name":"stdout","time":3184.885996034,"data":"jumbo-fusion-747         r0 hard    https_protocol_mismatch        F func=1 file=test.js          tok=89      7.6s \n"}
+,{"stream_name":"stdout","time":3197.447573545,"data":"jumbo-fusion-747         r0 hard    https_protocol_mismatch        T func=1 file=test.js          tok=149    12.2s \n"}
+,{"stream_name":"stdout","time":3209.622028694,"data":"jumbo-fusion-747         r0 hard    callback_arity                 F func=0 file=test.js          tok=176    12.0s \n"}
+,{"stream_name":"stdout","time":3224.322118579,"data":"jumbo-fusion-747         r0 hard    callback_arity                 T func=0 file=test.js          tok=216    14.5s \n"}
+,{"stream_name":"stdout","time":3234.407755747,"data":"jumbo-fusion-747         r0 hard    uninterpolated_url             F func=1 file=test.js          tok=113     9.8s \n"}
+,{"stream_name":"stdout","time":3246.297597744,"data":"jumbo-fusion-747         r0 hard    uninterpolated_url             T func=1 file=test.js          tok=155    11.6s \n"}
+,{"stream_name":"stdout","time":3259.804679759,"data":"jumbo-fusion-747         r0 hard    inverted_status_check          F func=1 file=test.js          tok=218    13.2s \n"}
+,{"stream_name":"stdout","time":3274.734495531,"data":"jumbo-fusion-747         r0 hard    inverted_status_check          T func=1 file=test.js          tok=264    14.6s \n"}
+,{"stream_name":"stdout","time":3283.714833215,"data":"jumbo-fusion-747         r0 hard    route_wrong_status             F func=1 file=test.js          tok=129     8.7s \n"}
+,{"stream_name":"stdout","time":3294.51223231,"data":"jumbo-fusion-747         r0 hard    route_wrong_status             T func=1 file=test.js          tok=171    10.5s \n"}
+,{"stream_name":"stdout","time":3302.79299729,"data":"jumbo-fusion-747         r0 hard    multi_hunk                     F func=0 file=test.js          tok=127     8.1s \n"}
+,{"stream_name":"stdout","time":3314.555380204,"data":"jumbo-fusion-747         r0 hard    multi_hunk                     T func=0 file=test.js          tok=172    11.6s \n"}
+,{"stream_name":"stdout","time":3325.350976846,"data":"jumbo-fusion-747         r0 multi   helper_throws                  F func=0 file=src/format.js    tok=109    10.5s \n"}
+,{"stream_name":"stdout","time":3352.296457945,"data":"jumbo-fusion-747         r0 multi   helper_throws                  T func=1 file=src/format.js    tok=436    26.6s \n"}
+,{"stream_name":"stdout","time":3360.288249305,"data":"jumbo-fusion-747         r0 multi   readme_first_then_code         F func=1 file=src/app.js       tok=104     7.7s \n"}
+,{"stream_name":"stdout","time":3369.854193837,"data":"jumbo-fusion-747         r0 multi   readme_first_then_code         T func=1 file=src/app.js       tok=133     9.2s \n"}
+,{"stream_name":"stdout","time":3379.184864801,"data":"jumbo-fusion-747         r0 multi   second_changed_file_buggy      F func=1 file=src/format.js    tok=139     9.0s \n"}
+,{"stream_name":"stdout","time":3389.945633931,"data":"jumbo-fusion-747         r0 multi   second_changed_file_buggy      T func=1 file=src/format.js    tok=164    10.4s \n"}
+,{"stream_name":"stdout","time":3405.733221847,"data":"jumbo-fusion-747         r0 multi   test_exposes_latent_bug        F func=0 file=src/format.js    tok=232    15.5s \n"}
+,{"stream_name":"stdout","time":3426.309561326,"data":"jumbo-fusion-747         r0 multi   test_exposes_latent_bug        T func=0 file=src/format.js    tok=322    20.3s \n"}
+,{"stream_name":"stdout","time":3435.000338921,"data":"jumbo-fusion-747         r0 multi   wrong_require_path             F func=1 file=test/api.test.js tok=96      8.4s \n"}
+,{"stream_name":"stdout","time":3448.189208279,"data":"jumbo-fusion-747         r0 multi   wrong_require_path             T func=1 file=test/api.test.js tok=160    12.9s \n"}
+,{"stream_name":"stdout","time":3457.97736746,"data":"jumbo-fusion-747         r0 multi   signature_changed_caller_not   F func=0 file=None             tok=156     9.7s file_path \"src/app.js\" is not one of the files sho\n"}
+,{"stream_name":"stdout","time":3519.843702219,"data":"jumbo-fusion-747         r0 multi   signature_changed_caller_not   T func=0 file=None             tok=1232   61.8s file_path \"src/app.js\" is not one of the files sho\n"}
+,{"stream_name":"stdout","time":3530.36221401,"data":"jumbo-fusion-747         r1 control missing_app_init               F func=1 file=test.js          tok=155    10.2s \n"}
+,{"stream_name":"stdout","time":3538.925947083,"data":"jumbo-fusion-747         r1 control typo_method                    F func=1 file=test.js          tok=98      8.2s \n"}
+,{"stream_name":"stdout","time":3547.415779591,"data":"jumbo-fusion-747         r1 control missing_require                F func=1 file=test.js          tok=99      8.2s \n"}
+,{"stream_name":"stdout","time":3556.952108675,"data":"jumbo-fusion-747         r1 control syntax_missing_brace           F func=0 file=None             tok=126     9.5s Bad control character in string literal in JSON at\n"}
+,{"stream_name":"stdout","time":3564.656172622,"data":"jumbo-fusion-747         r1 control wrong_status_check             F func=1 file=test.js          tok=99      7.4s \n"}
+,{"stream_name":"stdout","time":3572.44180732,"data":"jumbo-fusion-747         r1 hard    https_protocol_mismatch        F func=1 file=test.js          tok=88      7.5s \n"}
+,{"stream_name":"stdout","time":3586.359994785,"data":"jumbo-fusion-747         r1 hard    https_protocol_mismatch        T func=1 file=test.js          tok=176    13.6s \n"}
+,{"stream_name":"stdout","time":3598.458059427,"data":"jumbo-fusion-747         r1 hard    callback_arity                 F func=0 file=test.js          tok=176    11.9s \n"}
+,{"stream_name":"stdout","time":3621.186237781,"data":"jumbo-fusion-747         r1 hard    callback_arity                 T func=0 file=test.js          tok=399    22.5s \n"}
+,{"stream_name":"stdout","time":3630.418991676,"data":"jumbo-fusion-747         r1 hard    uninterpolated_url             F func=1 file=test.js          tok=107     8.9s \n"}
+,{"stream_name":"stdout","time":3642.731116265,"data":"jumbo-fusion-747         r1 hard    uninterpolated_url             T func=1 file=test.js          tok=155    12.0s \n"}
+,{"stream_name":"stdout","time":3655.796161177,"data":"jumbo-fusion-747         r1 hard    inverted_status_check          F func=1 file=test.js          tok=222    12.7s \n"}
+,{"stream_name":"stdout","time":3671.290223292,"data":"jumbo-fusion-747         r1 hard    inverted_status_check          T func=1 file=test.js          tok=270    15.1s \n"}
+,{"stream_name":"stdout","time":3680.049471153,"data":"jumbo-fusion-747         r1 hard    route_wrong_status             F func=1 file=test.js          tok=128     8.4s \n"}
+,{"stream_name":"stdout","time":3691.11887888,"data":"jumbo-fusion-747         r1 hard    route_wrong_status             T func=1 file=test.js          tok=177    10.7s \n"}
+,{"stream_name":"stdout","time":3699.385395795,"data":"jumbo-fusion-747         r1 hard    multi_hunk                     F func=0 file=test.js          tok=130     8.1s \n"}
+,{"stream_name":"stdout","time":3709.725390859,"data":"jumbo-fusion-747         r1 hard    multi_hunk                     T func=0 file=test.js          tok=168    10.2s \n"}
+,{"stream_name":"stdout","time":3720.232074276,"data":"jumbo-fusion-747         r1 multi   helper_throws                  F func=0 file=src/format.js    tok=112    10.2s \n"}
+,{"stream_name":"stdout","time":3752.185972903,"data":"jumbo-fusion-747         r1 multi   helper_throws                  T func=1 file=src/format.js    tok=541    31.7s \n"}
+,{"stream_name":"stdout","time":3759.538127928,"data":"jumbo-fusion-747         r1 multi   readme_first_then_code         F func=1 file=src/app.js       tok=96      7.0s \n"}
+,{"stream_name":"stdout","time":3768.287899775,"data":"jumbo-fusion-747         r1 multi   readme_first_then_code         T func=1 file=src/app.js       tok=129     8.4s \n"}
+,{"stream_name":"stdout","time":3777.676485105,"data":"jumbo-fusion-747         r1 multi   second_changed_file_buggy      F func=1 file=src/format.js    tok=140     9.1s \n"}
+,{"stream_name":"stdout","time":3788.321237802,"data":"jumbo-fusion-747         r1 multi   second_changed_file_buggy      T func=1 file=src/format.js    tok=164    10.3s \n"}
+,{"stream_name":"stdout","time":3800.067011695,"data":"jumbo-fusion-747         r1 multi   test_exposes_latent_bug        F func=0 file=src/format.js    tok=233    11.4s \n"}
+,{"stream_name":"stdout","time":3811.536070524,"data":"jumbo-fusion-747         r1 multi   test_exposes_latent_bug        T func=0 file=src/format.js    tok=209    11.1s \n"}
+,{"stream_name":"stdout","time":3820.573492077,"data":"jumbo-fusion-747         r1 multi   wrong_require_path             F func=1 file=test/api.test.js tok=95      8.7s \n"}
+,{"stream_name":"stdout","time":3834.514984482,"data":"jumbo-fusion-747         r1 multi   wrong_require_path             T func=1 file=test/api.test.js tok=210    13.6s \n"}
+,{"stream_name":"stdout","time":3844.097369027,"data":"jumbo-fusion-747         r1 multi   signature_changed_caller_not   F func=0 file=None             tok=153     9.5s file_path \"src/app.js\" is not one of the files sho\n"}
+,{"stream_name":"stdout","time":3904.120302976,"data":"jumbo-fusion-747         r1 multi   signature_changed_caller_not   T func=0 file=None             tok=1192   60.0s file_path \"src/app.js\" is not one of the files sho\n"}
+,{"stream_name":"stdout","time":3904.153085601,"data":"\n"}
+,{"stream_name":"stdout","time":3904.153115516,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":3904.153173486,"data":"MODEL coder390-efficientthink  (nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2)\n"}
+,{"stream_name":"stdout","time":3904.153180218,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":4008.04840686,"data":"  got GGUF/Qwen3.8-27B-Coder390-EfficientThink-Q4LynnStyle-Q8MTP.gguf 19.8 GB in 104s\n"}
+,{"stream_name":"stdout","time":4149.595942719,"data":"  ctx=131072 boot 93s | 16.9 tok/s | accept 0.625 | VRAM [14383, 14383]\n"}
+,{"stream_name":"stdout","time":4163.977934926,"data":"coder390-efficientthink  r0 control missing_app_init               F func=1 file=test.js          tok=175    14.1s \n"}
+,{"stream_name":"stdout","time":4174.251149863,"data":"coder390-efficientthink  r0 control typo_method                    F func=1 file=test.js          tok=132    10.0s \n"}
+,{"stream_name":"stdout","time":4183.498034729,"data":"coder390-efficientthink  r0 control missing_require                F func=1 file=test.js          tok=124     8.9s \n"}
+,{"stream_name":"stdout","time":4199.079995647,"data":"coder390-efficientthink  r0 control syntax_missing_brace           F func=1 file=test.js          tok=267    15.2s \n"}
+,{"stream_name":"stdout","time":4208.713772928,"data":"coder390-efficientthink  r0 control wrong_status_check             F func=1 file=test.js          tok=137     9.3s \n"}
+,{"stream_name":"stdout","time":4218.955987121,"data":"coder390-efficientthink  r0 hard    https_protocol_mismatch        F func=1 file=test.js          tok=121     9.9s \n"}
+,{"stream_name":"stdout","time":4243.716911882,"data":"coder390-efficientthink  r0 hard    https_protocol_mismatch        T func=1 file=test.js          tok=342    24.4s \n"}
+,{"stream_name":"stdout","time":4256.036863471,"data":"coder390-efficientthink  r0 hard    callback_arity                 F func=0 file=test.js          tok=171    12.1s \n"}
+,{"stream_name":"stdout","time":4334.379247027,"data":"coder390-efficientthink  r0 hard    callback_arity                 T func=0 file=test.js          tok=1441   78.2s \n"}
+,{"stream_name":"stdout","time":4345.174608836,"data":"coder390-efficientthink  r0 hard    uninterpolated_url             F func=1 file=test.js          tok=139    10.5s \n"}
+,{"stream_name":"stdout","time":4374.826182403,"data":"coder390-efficientthink  r0 hard    uninterpolated_url             T func=1 file=test.js          tok=486    29.3s \n"}
+,{"stream_name":"stdout","time":4390.670146717,"data":"coder390-efficientthink  r0 hard    inverted_status_check          F func=1 file=test.js          tok=260    15.5s \n"}
+,{"stream_name":"stdout","time":4425.742119265,"data":"coder390-efficientthink  r0 hard    inverted_status_check          T func=1 file=test.js          tok=596    34.7s \n"}
+,{"stream_name":"stdout","time":4435.862218938,"data":"coder390-efficientthink  r0 hard    route_wrong_status             F func=1 file=test.js          tok=148     9.8s \n"}
+,{"stream_name":"stdout","time":4461.984744651,"data":"coder390-efficientthink  r0 hard    route_wrong_status             T func=1 file=test.js          tok=433    25.8s \n"}
+,{"stream_name":"stdout","time":4472.235376831,"data":"coder390-efficientthink  r0 hard    multi_hunk                     F func=0 file=test.js          tok=159    10.1s \n"}
+,{"stream_name":"stdout","time":4548.156037748,"data":"coder390-efficientthink  r0 hard    multi_hunk                     T func=0 file=test.js          tok=1323   75.7s \n"}
+,{"stream_name":"stdout","time":4560.341275205,"data":"coder390-efficientthink  r0 multi   helper_throws                  F func=0 file=src/format.js    tok=145    11.9s \n"}
+,{"stream_name":"stdout","time":4598.980525643,"data":"coder390-efficientthink  r0 multi   helper_throws                  T func=0 file=src/format.js    tok=642    38.3s \n"}
+,{"stream_name":"stdout","time":4607.453058424,"data":"coder390-efficientthink  r0 multi   readme_first_then_code         F func=1 file=src/app.js       tok=118     8.2s \n"}
+,{"stream_name":"stdout","time":4629.542859382,"data":"coder390-efficientthink  r0 multi   readme_first_then_code         T func=1 file=src/app.js       tok=363    21.8s \n"}
+,{"stream_name":"stdout","time":4639.667236228,"data":"coder390-efficientthink  r0 multi   second_changed_file_buggy      F func=1 file=src/format.js    tok=146     9.8s \n"}
+,{"stream_name":"stdout","time":4660.86178836,"data":"coder390-efficientthink  r0 multi   second_changed_file_buggy      T func=1 file=src/format.js    tok=347    20.9s \n"}
+,{"stream_name":"stdout","time":4674.842761002,"data":"coder390-efficientthink  r0 multi   test_exposes_latent_bug        F func=0 file=src/format.js    tok=184    13.7s \n"}
+,{"stream_name":"stdout","time":4745.238630877,"data":"coder390-efficientthink  r0 multi   test_exposes_latent_bug        T func=1 file=src/format.js    tok=1186   70.1s \n"}
+,{"stream_name":"stdout","time":4755.686546781,"data":"coder390-efficientthink  r0 multi   wrong_require_path             F func=1 file=test/api.test.js tok=120    10.1s \n"}
+,{"stream_name":"stdout","time":4782.537880138,"data":"coder390-efficientthink  r0 multi   wrong_require_path             T func=1 file=test/api.test.js tok=417    26.5s \n"}
+,{"stream_name":"stdout","time":4793.306068985,"data":"coder390-efficientthink  r0 multi   signature_changed_caller_not   F func=0 file=src/format.js    tok=177    10.5s \n"}
+,{"stream_name":"stdout","time":4862.884514624,"data":"coder390-efficientthink  r0 multi   signature_changed_caller_not   T func=0 file=src/format.js    tok=1192   69.3s \n"}
+,{"stream_name":"stdout","time":4874.769319134,"data":"coder390-efficientthink  r1 control missing_app_init               F func=1 file=test.js          tok=171    11.6s \n"}
+,{"stream_name":"stdout","time":4884.852398131,"data":"coder390-efficientthink  r1 control typo_method                    F func=1 file=test.js          tok=132     9.8s \n"}
+,{"stream_name":"stdout","time":4894.564937245,"data":"coder390-efficientthink  r1 control missing_require                F func=1 file=test.js          tok=132     9.4s \n"}
+,{"stream_name":"stdout","time":4910.820642696,"data":"coder390-efficientthink  r1 control syntax_missing_brace           F func=1 file=test.js          tok=267    15.9s \n"}
+,{"stream_name":"stdout","time":4920.221214314,"data":"coder390-efficientthink  r1 control wrong_status_check             F func=1 file=test.js          tok=129     9.1s \n"}
+,{"stream_name":"stdout","time":4929.965109959,"data":"coder390-efficientthink  r1 hard    https_protocol_mismatch        F func=1 file=test.js          tok=121     9.4s \n"}
+,{"stream_name":"stdout","time":4952.409733784,"data":"coder390-efficientthink  r1 hard    https_protocol_mismatch        T func=1 file=test.js          tok=338    22.1s \n"}
+,{"stream_name":"stdout","time":4966.651932573,"data":"coder390-efficientthink  r1 hard    callback_arity                 F func=0 file=test.js          tok=213    14.1s \n"}
+,{"stream_name":"stdout","time":5039.415404069,"data":"coder390-efficientthink  r1 hard    callback_arity                 T func=0 file=test.js          tok=1421   72.6s \n"}
+,{"stream_name":"stdout","time":5050.695567041,"data":"coder390-efficientthink  r1 hard    uninterpolated_url             F func=1 file=test.js          tok=148    11.0s \n"}
+,{"stream_name":"stdout","time":5088.230802432,"data":"coder390-efficientthink  r1 hard    uninterpolated_url             T func=1 file=test.js          tok=631    37.2s \n"}
+,{"stream_name":"stdout","time":5103.34528749,"data":"coder390-efficientthink  r1 hard    inverted_status_check          F func=1 file=test.js          tok=256    14.8s \n"}
+,{"stream_name":"stdout","time":5168.333619705,"data":"coder390-efficientthink  r1 hard    inverted_status_check          T func=1 file=test.js          tok=1212   64.7s \n"}
+,{"stream_name":"stdout","time":5178.476899935,"data":"coder390-efficientthink  r1 hard    route_wrong_status             F func=1 file=test.js          tok=148     9.8s \n"}
+,{"stream_name":"stdout","time":5208.833872145,"data":"coder390-efficientthink  r1 hard    route_wrong_status             T func=1 file=test.js          tok=519    30.0s \n"}
+,{"stream_name":"stdout","time":5219.046457507,"data":"coder390-efficientthink  r1 hard    multi_hunk                     F func=0 file=test.js          tok=159    10.0s \n"}
+,{"stream_name":"stdout","time":5290.150563678,"data":"coder390-efficientthink  r1 hard    multi_hunk                     T func=1 file=test.js          tok=1248   70.8s \n"}
+,{"stream_name":"stdout","time":5302.751503093,"data":"coder390-efficientthink  r1 multi   helper_throws                  F func=0 file=src/format.js    tok=149    12.3s \n"}
+,{"stream_name":"stdout","time":5327.423305529,"data":"coder390-efficientthink  r1 multi   helper_throws                  T func=0 file=src/format.js    tok=386    24.4s \n"}
+,{"stream_name":"stdout","time":5336.40725079,"data":"coder390-efficientthink  r1 multi   readme_first_then_code         F func=1 file=src/app.js       tok=128     8.7s \n"}
+,{"stream_name":"stdout","time":5357.089719494,"data":"coder390-efficientthink  r1 multi   readme_first_then_code         T func=1 file=src/app.js       tok=330    20.4s \n"}
+,{"stream_name":"stdout","time":5367.098343485,"data":"coder390-efficientthink  r1 multi   second_changed_file_buggy      F func=1 file=src/format.js    tok=146     9.7s \n"}
+,{"stream_name":"stdout","time":5388.049706884,"data":"coder390-efficientthink  r1 multi   second_changed_file_buggy      T func=1 file=src/format.js    tok=343    20.6s \n"}
+,{"stream_name":"stdout","time":5401.709828323,"data":"coder390-efficientthink  r1 multi   test_exposes_latent_bug        F func=0 file=src/format.js    tok=187    13.3s \n"}
+,{"stream_name":"stdout","time":5474.644005803,"data":"coder390-efficientthink  r1 multi   test_exposes_latent_bug        T func=1 file=src/format.js    tok=1224   72.6s \n"}
+,{"stream_name":"stdout","time":5485.109304045,"data":"coder390-efficientthink  r1 multi   wrong_require_path             F func=1 file=test/api.test.js tok=119    10.1s \n"}
+,{"stream_name":"stdout","time":5512.228924954,"data":"coder390-efficientthink  r1 multi   wrong_require_path             T func=1 file=test/api.test.js tok=418    26.8s \n"}
+,{"stream_name":"stdout","time":5523.398770911,"data":"coder390-efficientthink  r1 multi   signature_changed_caller_not   F func=0 file=src/format.js    tok=178    10.9s \n"}
+,{"stream_name":"stdout","time":5594.562064259,"data":"coder390-efficientthink  r1 multi   signature_changed_caller_not   T func=0 file=src/format.js    tok=1226   70.8s \n"}
+,{"stream_name":"stdout","time":5594.599708977,"data":"\n"}
+,{"stream_name":"stdout","time":5594.599758098,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":5594.599766523,"data":"SUMMARY (rule fixed before the data)\n"}
+,{"stream_name":"stdout","time":5594.59977245,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":5594.603617365,"data":"unsloth-ud-q4kxl         ctl 10/10 F 14/24 T 21/24  Fmed 9.5   tok/s 23.4  acc 0.641 split True  leak 0    \n"}
+,{"stream_name":"stdout","time":5594.603648111,"data":"fable-cold-fusion-735    ctl 10/10 F 14/24 T 15/24  Fmed 10.2  tok/s 17.6  acc 0.602 split True  leak 0    \n"}
+,{"stream_name":"stdout","time":5594.603655295,"data":"jumbo-fusion-747         ctl 8/10  F 14/24 T 16/24  Fmed 9.0   tok/s 19.3  acc 0.58  split True  leak 0    controls 8/10\n"}
+,{"stream_name":"stdout","time":5594.603661368,"data":"coder390-efficientthink  ctl 10/10 F 14/24 T 17/24  Fmed 10.1  tok/s 16.9  acc 0.625 split True  leak 0    \n"}
+,{"stream_name":"stdout","time":5594.60366713,"data":"RANKING: ['unsloth-ud-q4kxl', 'coder390-efficientthink', 'fable-cold-fusion-735'] | RECOMMENDED: unsloth-ud-q4kxl\n"}
+,{"stream_name":"stderr","time":5598.46661917,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":5598.466681859,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":5598.893220765,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":5598.893255764,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":5601.346579777,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":5602.583095255,"data":"[NbConvertApp] Writing 496230 bytes to __results__.html\n"}
+]

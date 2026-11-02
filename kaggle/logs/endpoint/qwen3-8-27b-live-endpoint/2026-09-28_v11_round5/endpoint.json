@@ -1,0 +1,15 @@
+{
+ "url": "https://telecom-shuttle-kind-cds.trycloudflare.com",
+ "api_key": "selfheal-e2e-key",
+ "repo": "unsloth/Qwen3.8-27B-GGUF",
+ "file": "Qwen3.8-27B-UD-Q4_K_XL.gguf",
+ "model_gb": 17.6,
+ "ctx": 131072,
+ "vram_used_mib": 26566,
+ "tensor_split_engaged": true,
+ "mtp_engaged": true,
+ "accept_rate": 0.613,
+ "vram_total_mib": 30720,
+ "gen_tps_avg": 23.9,
+ "gen_tps_best": 24.4
+}

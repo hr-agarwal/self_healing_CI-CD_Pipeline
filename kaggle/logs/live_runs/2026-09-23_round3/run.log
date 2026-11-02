@@ -1,0 +1,46 @@
+======================================================================
+callback_arity
+  PR https://github.com/Lin-2352/self-healing-cicd-demo/pull/22 (45s)
+  heal commits (trailers): [1]
+  heal commits (trailers): [1, 2]
+  heal commits (trailers): [1, 2, 3]
+  -> gave_up | attempts [1, 2, 3] | final smoke rc=1 golden=False 
+======================================================================
+multi_hunk
+  PR https://github.com/Lin-2352/self-healing-cicd-demo/pull/23 (44s)
+  heal commits (trailers): [1]
+  heal commits (trailers): [1, 2]
+  -> green | attempts [1, 2] | final smoke rc=0 golden=False | push->green 161s
+======================================================================
+missing_app_init
+  PR https://github.com/Lin-2352/self-healing-cicd-demo/pull/24 (43s)
+  heal commits (trailers): [1]
+  -> green | attempts [1] | final smoke rc=0 golden=True | push->green 62s
+======================================================================
+typo_method
+  PR https://github.com/Lin-2352/self-healing-cicd-demo/pull/25 (40s)
+  heal commits (trailers): [1]
+  -> green | attempts [1] | final smoke rc=0 golden=True | push->green 59s
+======================================================================
+missing_require
+  PR https://github.com/Lin-2352/self-healing-cicd-demo/pull/26 (43s)
+  heal commits (trailers): [1]
+  -> green | attempts [1] | final smoke rc=0 golden=True | push->green 66s
+======================================================================
+syntax_missing_brace
+  PR https://github.com/Lin-2352/self-healing-cicd-demo/pull/27 (84s)
+  heal commits (trailers): [1]
+  -> green | attempts [1] | final smoke rc=0 golden=True | push->green 103s
+======================================================================
+wrong_status_check
+  PR https://github.com/Lin-2352/self-healing-cicd-demo/pull/28 (44s)
+  heal commits (trailers): [1]
+  -> green | attempts [1] | final smoke rc=0 golden=True | push->green 64s
+
+callback_arity           gave_up  attempts=[1, 2, 3] smoke_rc=1
+multi_hunk               green    attempts=[1, 2] smoke_rc=0
+missing_app_init         green    attempts=[1] smoke_rc=0
+typo_method              green    attempts=[1] smoke_rc=0
+missing_require          green    attempts=[1] smoke_rc=0
+syntax_missing_brace     green    attempts=[1] smoke_rc=0
+wrong_status_check       green    attempts=[1] smoke_rc=0

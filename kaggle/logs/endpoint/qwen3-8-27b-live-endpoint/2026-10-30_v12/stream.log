@@ -1,0 +1,26 @@
+C:\Users\Harsh Raj\AppData\Roaming\Python\Python313\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.4.3)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Warning: Looks like you're using an outdated `kaggle` version (installed: 2.2.4), please consider upgrading to the latest version (2.2.5)
+GPU: Tesla T4, 15360 MiB | Tesla T4, 15360 MiB | total 30720 MiB
+
+==============================================================================
+EXTRACTING PREBUILT llama-server
+zip candidates: ['/kaggle/input/llama-server-builder/llama-server-cuda.zip']
+extracted in 3.7s; --help rc=0
+----- common params -----
+-h,    --help, --usage                  print usage and exit
+DOWNLOADING MODEL unsloth-ud-q4kxl (unsloth/Qwen3.8-27B-GGUF)
+  downloading Qwen3.8-27B-UD-Q4_K_XL.gguf
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  got 17.6 GB in 91s
+TRYING ctx = 131072
+  booted. VRAM 26566 / 30720 MiB. benchmarking...
+    run 1: 24.4 tok/s (235 tokens)
+    run 2: 23.8 tok/s (256 tokens)
+    run 3: 23.4 tok/s (256 tokens)
+SELECTED ctx=131072 | VRAM 26566/30720 MiB | 23.8 tok/s avg (best 24.4)
+  tensor split engaged: True  (per-GPU [13287, 13287], symmetric == engaged)
+  MTP engaged         : True  (accept_rate 0.64)
+STARTING CLOUDFLARE TUNNEL
+ENDPOINT LIVE
+URL      : https://spent-behavior-married-disk.trycloudflare.com

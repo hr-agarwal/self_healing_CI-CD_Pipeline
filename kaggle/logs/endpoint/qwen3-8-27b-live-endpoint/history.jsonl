@@ -1,0 +1,8 @@
+{"event": "push", "version": 7, "at": "2026-09-22", "note": "go-live round 1", "seeded": true}
+{"event": "push", "version": 8, "at": "2026-09-23", "note": "round 2: CI log in prompt", "seeded": true}
+{"event": "push", "version": 9, "at": "2026-09-23", "note": "round 3: retry loop, reasoning budget", "seeded": true}
+{"event": "push", "version": 10, "at": "2026-09-28", "note": "full test run", "seeded": true}
+{"event": "push", "version": 11, "at": "2026-09-28", "note": "round 5: streaming + failure comments", "seeded": true}
+{"event": "fetch_logs", "dir": "kaggle\\logs\\endpoint\\qwen3-8-27b-live-endpoint\\2026-09-28_v11_round5", "files": ["boot.log", "endpoint.json", "kernel.log", "server.log", "tunnel.log"], "at": "2026-10-30T00:20:16+05:30"}
+{"event": "push", "version": 12, "code": "kaggle\\endpoint\\push\\qwen3-8-27b-live-endpoint.py", "at": "2026-10-30T02:55:28+05:30"}
+{"event": "stopped", "version": 12, "how": "web UI: View Active Events -> ... -> Stop Session", "note": "user test session; boot 23.8 tok/s, accept 0.64, ctx 131072; status CANCEL_ACKNOWLEDGED", "at": "2026-10-30T03:34:28+05:30"}

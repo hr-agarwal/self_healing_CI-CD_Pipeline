@@ -1,0 +1,10 @@
+GPU: Tesla T4, 15360 MiB | Tesla T4, 15360 MiB | total 30720 MiB
+  got 17.6 GB in 84s
+TRYING ctx = 131072
+  booted. VRAM 26566 / 30720 MiB. benchmarking...
+SELECTED ctx=131072 | VRAM 26566/30720 MiB | 23.9 tok/s avg (best 24.4)
+  tensor split engaged: True  (per-GPU [13287, 13287], symmetric == engaged)
+  MTP engaged         : True  (accept_rate 0.613)
+URL      : https://telecom-shuttle-kind-cds.trycloudflare.com
+
+ENDPOINT URL saved

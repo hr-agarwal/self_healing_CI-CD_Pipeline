@@ -1,0 +1,10 @@
+0.00.281.851 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.283.977 I srv    load_model: loading model '/kaggle/tmp/models/Ternary-Bonsai-2-27B-PQ2_0.gguf'
+0.02.169.168 W operator(): failed to measure the memory of the extra model, fitting without it: failed to create llama_context from model
+0.05.105.866 I cmn          init: llama threadpool init, n_threads = 4
+0.21.936.512 I common_speculative_init_result: creating MTP draft context against the target model '/kaggle/tmp/models/Ternary-Bonsai-2-27B-PQ2_0.gguf'
+0.21.936.525 W llama_init_from_model: context type MTP requested but model doesn't contain MTP layers
+0.21.936.525 E common_speculative_init_result: failed to create MTP context
+0.21.936.531 E srv    load_model: failed to create MTP context
+0.21.936.536 I srv    operator(): operator(): cleaning up before exit...
+0.21.937.103 E srv  llama_server: exiting due to model loading error

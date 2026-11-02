@@ -1,0 +1,2 @@
+{"event": "push", "version": 1, "code": "kaggle\\evals\\bakeoff\\push\\qwen3-8-model-bakeoff.py", "at": "2026-10-30T00:38:35+05:30"}
+{"event": "fetch_logs", "dir": "kaggle\\logs\\bakeoff\\qwen3-8-model-bakeoff\\2026-10-30_v1", "files": ["kernel.log", "results.json", "server_coder390-efficientthink.log", "server_fable-cold-fusion-735.log", "server_jumbo-fusion-747.log", "server_unsloth-ud-q4kxl.log"], "at": "2026-10-30T02:12:27+05:30"}

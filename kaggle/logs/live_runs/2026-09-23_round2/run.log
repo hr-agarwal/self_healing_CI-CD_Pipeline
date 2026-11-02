@@ -1,0 +1,34 @@
+======================================================================
+missing_app_init
+  CI failure (run 35801146250)
+  PR https://github.com/Lin-2352/self-healing-cicd-demo/pull/15  84s  parses=True golden=True
+  PR CI: success
+  restore CI success
+======================================================================
+typo_method
+  CI failure (run 35801349530)
+  PR https://github.com/Lin-2352/self-healing-cicd-demo/pull/16  40s  parses=True golden=True
+  PR CI: success
+  restore CI success
+======================================================================
+missing_require
+  CI failure (run 35801466639)
+  PR https://github.com/Lin-2352/self-healing-cicd-demo/pull/17  42s  parses=True golden=True
+  PR CI: success
+  restore CI success
+======================================================================
+syntax_missing_brace
+  CI failure (run 35801583767)
+  PR https://github.com/Lin-2352/self-healing-cicd-demo/pull/18  53s  parses=True golden=True
+  PR CI: success
+  restore CI success
+======================================================================
+wrong_status_check
+  CI failure (run 35801721163)
+  PR https://github.com/Lin-2352/self-healing-cicd-demo/pull/19  40s  parses=True golden=True
+  PR CI: success
+  restore CI success
+
+healed 5/5
+PR CI green 5/5
+push->PR median 42s (min 40, max 84)

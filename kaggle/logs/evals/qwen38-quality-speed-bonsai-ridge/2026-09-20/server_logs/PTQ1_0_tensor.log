@@ -1,0 +1,24 @@
+0.00.286.095 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.288.114 I srv    load_model: loading model '/kaggle/tmp/models/Ternary-Bonsai-2-27B-PTQ1_0.gguf'
+0.00.288.307 W common_fit_params: failed to fit params to free device memory: llama_params_fit is not implemented for SPLIT_MODE_TENSOR, abort
+0.03.519.211 W NCCL not compiled in; falling back to internal AllReduce.  Recompile with -DGGML_CUDA_NCCL=ON for best multi-GPU performance.
+0.03.630.230 I cmn          init: llama threadpool init, n_threads = 4
+/home/runner/work/llama.cpp/llama.cpp/ggml/src/ggml-backend-meta.cpp:1086: GGML_ASSERT(split_state.ne[j] % div == 0) failed
+/kaggle/working/bin_fork/libggml-base.so.0(+0x1c8db)[0x7dfd6fcf58db]
+/kaggle/working/bin_fork/libggml-base.so.0(ggml_print_backtrace+0x21f)[0x7dfd6fcf5d5f]
+/kaggle/working/bin_fork/libggml-base.so.0(ggml_abort+0x152)[0x7dfd6fcf5f32]
+/kaggle/working/bin_fork/libggml-base.so.0(+0x45b6a)[0x7dfd6fd1eb6a]
+/kaggle/working/bin_fork/libggml-base.so.0(+0x41929)[0x7dfd6fd1a929]
+/kaggle/working/bin_fork/libggml-base.so.0(+0x4b613)[0x7dfd6fd24613]
+/kaggle/working/bin_fork/libggml-base.so.0(ggml_gallocr_alloc_graph+0x493)[0x7dfd6fd0dd83]
+/kaggle/working/bin_fork/libggml-base.so.0(ggml_backend_sched_alloc_graph+0x111)[0x7dfd6fd14431]
+/kaggle/working/bin_fork/libllama.so.0(_ZN13llama_context14process_ubatchERK12llama_ubatch14llm_graph_typeP22llama_memory_context_iR11ggml_status+0xee)[0x7dfd6f3002fe]
+/kaggle/working/bin_fork/libllama.so.0(_ZN13llama_context6decodeERK11llama_batch+0x4b7)[0x7dfd6f308157]
+/kaggle/working/bin_fork/libllama.so.0(llama_decode+0x10)[0x7dfd6f309660]
+/kaggle/working/bin_fork/libllama-common.so.0(_Z23common_init_from_paramsR13common_paramsb+0x420)[0x7dfd6fa16b10]
+/kaggle/working/bin_fork/libllama-server-impl.so(_ZN19server_context_impl10load_modelER13common_params+0x699)[0x7dfd7037b939]
+/kaggle/working/bin_fork/libllama-server-impl.so(_Z12llama_serverR13common_paramsiPPc+0x421d)[0x7dfd702cdb2d]
+/kaggle/working/bin_fork/libllama-server-impl.so(_Z12llama_serveriPPc+0xdf)[0x7dfd702cf3cf]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90)[0x7dfd6fdd4d90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80)[0x7dfd6fdd4e40]
+/kaggle/working/bin_fork/llama-server(+0x1295)[0x5d1371f59295]

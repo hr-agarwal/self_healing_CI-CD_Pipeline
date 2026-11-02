@@ -1,0 +1,264 @@
+[{"stream_name":"stdout","time":1.593003561,"data":"GPU: Tesla T4, 15360 MiB | Tesla T4, 15360 MiB | total 30720 MiB\n"}
+,{"stream_name":"stdout","time":1.593067553,"data":"\n"}
+,{"stream_name":"stdout","time":1.593074692,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":1.593079428,"data":"EXTRACTING PREBUILT llama-server\n"}
+,{"stream_name":"stdout","time":1.5930836529999999,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":1.6025679240000001,"data":"zip candidates: ['/kaggle/input/llama-server-builder/llama-server-cuda.zip']\n"}
+,{"stream_name":"stdout","time":5.121557263,"data":"extracted in 3.5s; --help rc=0\n"}
+,{"stream_name":"stdout","time":5.121599907,"data":"----- common params -----\n"}
+,{"stream_name":"stdout","time":5.121604764,"data":"\n"}
+,{"stream_name":"stdout","time":5.121608343,"data":"-h,    --help, --usage                  print usage and exit\n"}
+,{"stream_name":"stdout","time":5.121612173,"data":"\n"}
+,{"stream_name":"stdout","time":6.5241855619999995,"data":"\n"}
+,{"stream_name":"stdout","time":6.524225416,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":6.52423236,"data":"DOWNLOADING MODEL (unsloth UD-Q4_K_XL - the 15/15 eval winner)\n"}
+,{"stream_name":"stdout","time":6.524236609,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":6.771463727,"data":"  downloading Qwen3.8-27B-UD-Q4_K_XL.gguf\n"}
+,{"stream_name":"stdout","time":90.959209666,"data":"  got 17.6 GB in 84s\n"}
+,{"stream_name":"stdout","time":90.959256568,"data":"\n"}
+,{"stream_name":"stdout","time":90.959262507,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":90.959268224,"data":"TRYING ctx = 131072\n"}
+,{"stream_name":"stdout","time":90.959272962,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":181.371623501,"data":"  booted. VRAM 26566 / 30720 MiB. benchmarking...\n"}
+,{"stream_name":"stdout","time":192.349036958,"data":"    run 1: 23.4 tok/s (231 tokens)\n"}
+,{"stream_name":"stdout","time":203.827776493,"data":"    run 2: 23.8 tok/s (256 tokens)\n"}
+,{"stream_name":"stdout","time":214.978062042,"data":"    run 3: 24.4 tok/s (256 tokens)\n"}
+,{"stream_name":"stdout","time":215.011470211,"data":"\n"}
+,{"stream_name":"stdout","time":215.011520331,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":215.011527532,"data":"SELECTED ctx=131072 | VRAM 26566/30720 MiB | 23.9 tok/s avg (best 24.4)\n"}
+,{"stream_name":"stdout","time":215.011532211,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":215.011536767,"data":"  tensor split engaged: True  (per-GPU [13287, 13287], symmetric == engaged)\n"}
+,{"stream_name":"stdout","time":215.011541237,"data":"  MTP engaged         : True  (accept_rate 0.613)\n"}
+,{"stream_name":"stdout","time":215.011545902,"data":"\n"}
+,{"stream_name":"stdout","time":215.01155534,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":215.011558537,"data":"STARTING CLOUDFLARE TUNNEL\n"}
+,{"stream_name":"stdout","time":215.01156144,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":223.366889467,"data":"\n"}
+,{"stream_name":"stdout","time":223.366945729,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":223.366950368,"data":"ENDPOINT LIVE\n"}
+,{"stream_name":"stdout","time":223.366953179,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":223.366955762,"data":"URL      : https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":223.366958043,"data":"API key  : selfheal-e2e-key\n"}
+,{"stream_name":"stdout","time":223.366960216,"data":"Model    : Qwen3.8-27B-UD-Q4_K_XL.gguf (17.6 GB, UD-Q4_K_XL)\n"}
+,{"stream_name":"stdout","time":223.366962527,"data":"Context  : 131072 tokens\n"}
+,{"stream_name":"stdout","time":223.366964695,"data":"VRAM     : 26566 / 30720 MiB\n"}
+,{"stream_name":"stdout","time":223.366966879,"data":"SPEED    : 23.9 tok/s avg, 24.4 tok/s best\n"}
+,{"stream_name":"stdout","time":223.366969115,"data":"\n"}
+,{"stream_name":"stdout","time":223.36697177,"data":"curl https://telecom-shuttle-kind-cds.trycloudflare.com/v1/models -H 'Authorization: Bearer selfheal-e2e-key'\n"}
+,{"stream_name":"stdout","time":223.366974255,"data":"\n"}
+,{"stream_name":"stdout","time":223.366976531,"data":"curl https://telecom-shuttle-kind-cds.trycloudflare.com/v1/chat/completions -H 'Authorization: Bearer selfheal-e2e-key' -H 'Content-Type: application/json' -d '{\"model\":\"local\",\"messages\":[{\"role\":\"user\",\"content\":\"hello\"}],\"max_tokens\":200}'\n"}
+,{"stream_name":"stdout","time":283.405342804,"data":"[  1 min] vram=26574 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":343.444094905,"data":"[  2 min] vram=26634 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":403.484646912,"data":"[  3 min] vram=26634 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":463.525060046,"data":"[  4 min] vram=26634 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":523.564374775,"data":"[  5 min] vram=26634 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":583.603423104,"data":"[  6 min] vram=26634 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":643.647867404,"data":"[  7 min] vram=26634 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":703.6863291,"data":"[  8 min] vram=26634 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":763.726025936,"data":"[  9 min] vram=26634 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":823.731259158,"data":"\n"}
+,{"stream_name":"stdout","time":823.731305775,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":823.7313268,"data":"ENDPOINT LIVE\n"}
+,{"stream_name":"stdout","time":823.73133282,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":823.731338494,"data":"URL      : https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":823.731344449,"data":"API key  : selfheal-e2e-key\n"}
+,{"stream_name":"stdout","time":823.731349516,"data":"Model    : Qwen3.8-27B-UD-Q4_K_XL.gguf (17.6 GB, UD-Q4_K_XL)\n"}
+,{"stream_name":"stdout","time":823.731354207,"data":"Context  : 131072 tokens\n"}
+,{"stream_name":"stdout","time":823.731358712,"data":"VRAM     : 26566 / 30720 MiB\n"}
+,{"stream_name":"stdout","time":823.731363306,"data":"SPEED    : 23.9 tok/s avg, 24.4 tok/s best\n"}
+,{"stream_name":"stdout","time":823.731383721,"data":"\n"}
+,{"stream_name":"stdout","time":823.731386534,"data":"curl https://telecom-shuttle-kind-cds.trycloudflare.com/v1/models -H 'Authorization: Bearer selfheal-e2e-key'\n"}
+,{"stream_name":"stdout","time":823.731389112,"data":"\n"}
+,{"stream_name":"stdout","time":823.731391491,"data":"curl https://telecom-shuttle-kind-cds.trycloudflare.com/v1/chat/completions -H 'Authorization: Bearer selfheal-e2e-key' -H 'Content-Type: application/json' -d '{\"model\":\"local\",\"messages\":[{\"role\":\"user\",\"content\":\"hello\"}],\"max_tokens\":200}'\n"}
+,{"stream_name":"stdout","time":883.772099264,"data":"[ 11 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":943.811603794,"data":"[ 12 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":1003.852392826,"data":"[ 13 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":1063.892822868,"data":"[ 14 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":1123.931141864,"data":"[ 15 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":1183.970700784,"data":"[ 16 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":1244.009740617,"data":"[ 17 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":1304.048553126,"data":"[ 18 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":1364.087138501,"data":"[ 19 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":1424.092298766,"data":"\n"}
+,{"stream_name":"stdout","time":1424.092342446,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":1424.092348521,"data":"ENDPOINT LIVE\n"}
+,{"stream_name":"stdout","time":1424.09235277,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":1424.092357248,"data":"URL      : https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":1424.092367142,"data":"API key  : selfheal-e2e-key\n"}
+,{"stream_name":"stdout","time":1424.092370503,"data":"Model    : Qwen3.8-27B-UD-Q4_K_XL.gguf (17.6 GB, UD-Q4_K_XL)\n"}
+,{"stream_name":"stdout","time":1424.092373521,"data":"Context  : 131072 tokens\n"}
+,{"stream_name":"stdout","time":1424.092376391,"data":"VRAM     : 26566 / 30720 MiB\n"}
+,{"stream_name":"stdout","time":1424.092379316,"data":"SPEED    : 23.9 tok/s avg, 24.4 tok/s best\n"}
+,{"stream_name":"stdout","time":1424.092382371,"data":"\n"}
+,{"stream_name":"stdout","time":1424.092385152,"data":"curl https://telecom-shuttle-kind-cds.trycloudflare.com/v1/models -H 'Authorization: Bearer selfheal-e2e-key'\n"}
+,{"stream_name":"stdout","time":1424.092388244,"data":"\n"}
+,{"stream_name":"stdout","time":1424.092397711,"data":"curl https://telecom-shuttle-kind-cds.trycloudflare.com/v1/chat/completions -H 'Authorization: Bearer selfheal-e2e-key' -H 'Content-Type: application/json' -d '{\"model\":\"local\",\"messages\":[{\"role\":\"user\",\"content\":\"hello\"}],\"max_tokens\":200}'\n"}
+,{"stream_name":"stdout","time":1484.131327296,"data":"[ 21 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":1544.168769542,"data":"[ 22 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":1604.206965385,"data":"[ 23 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":1664.246950002,"data":"[ 24 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":1724.287019643,"data":"[ 25 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":1784.326194889,"data":"[ 26 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":1844.364973283,"data":"[ 27 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":1904.404116771,"data":"[ 28 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":1964.442875598,"data":"[ 29 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":2024.447795724,"data":"\n"}
+,{"stream_name":"stdout","time":2024.447830898,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":2024.447835145,"data":"ENDPOINT LIVE\n"}
+,{"stream_name":"stdout","time":2024.447838516,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":2024.447841835,"data":"URL      : https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":2024.447844985,"data":"API key  : selfheal-e2e-key\n"}
+,{"stream_name":"stdout","time":2024.447848036,"data":"Model    : Qwen3.8-27B-UD-Q4_K_XL.gguf (17.6 GB, UD-Q4_K_XL)\n"}
+,{"stream_name":"stdout","time":2024.447851196,"data":"Context  : 131072 tokens\n"}
+,{"stream_name":"stdout","time":2024.447854321,"data":"VRAM     : 26566 / 30720 MiB\n"}
+,{"stream_name":"stdout","time":2024.447857384,"data":"SPEED    : 23.9 tok/s avg, 24.4 tok/s best\n"}
+,{"stream_name":"stdout","time":2024.447860434,"data":"\n"}
+,{"stream_name":"stdout","time":2024.44786351,"data":"curl https://telecom-shuttle-kind-cds.trycloudflare.com/v1/models -H 'Authorization: Bearer selfheal-e2e-key'\n"}
+,{"stream_name":"stdout","time":2024.447866798,"data":"\n"}
+,{"stream_name":"stdout","time":2024.447870017,"data":"curl https://telecom-shuttle-kind-cds.trycloudflare.com/v1/chat/completions -H 'Authorization: Bearer selfheal-e2e-key' -H 'Content-Type: application/json' -d '{\"model\":\"local\",\"messages\":[{\"role\":\"user\",\"content\":\"hello\"}],\"max_tokens\":200}'\n"}
+,{"stream_name":"stdout","time":2084.485190971,"data":"[ 31 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":2144.524029706,"data":"[ 32 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":2204.564605934,"data":"[ 33 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":2264.607172515,"data":"[ 34 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":2324.645765685,"data":"[ 35 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":2384.685117707,"data":"[ 36 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":2444.72378568,"data":"[ 37 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":2504.76187068,"data":"[ 38 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":2564.80098427,"data":"[ 39 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":2624.805967827,"data":"\n"}
+,{"stream_name":"stdout","time":2624.806012176,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":2624.806016751,"data":"ENDPOINT LIVE\n"}
+,{"stream_name":"stdout","time":2624.806019855,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":2624.806023133,"data":"URL      : https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":2624.80602628,"data":"API key  : selfheal-e2e-key\n"}
+,{"stream_name":"stdout","time":2624.806029121,"data":"Model    : Qwen3.8-27B-UD-Q4_K_XL.gguf (17.6 GB, UD-Q4_K_XL)\n"}
+,{"stream_name":"stdout","time":2624.806032187,"data":"Context  : 131072 tokens\n"}
+,{"stream_name":"stdout","time":2624.806035062,"data":"VRAM     : 26566 / 30720 MiB\n"}
+,{"stream_name":"stdout","time":2624.806037889,"data":"SPEED    : 23.9 tok/s avg, 24.4 tok/s best\n"}
+,{"stream_name":"stdout","time":2624.806040898,"data":"\n"}
+,{"stream_name":"stdout","time":2624.806043691,"data":"curl https://telecom-shuttle-kind-cds.trycloudflare.com/v1/models -H 'Authorization: Bearer selfheal-e2e-key'\n"}
+,{"stream_name":"stdout","time":2624.806046817,"data":"\n"}
+,{"stream_name":"stdout","time":2624.806049648,"data":"curl https://telecom-shuttle-kind-cds.trycloudflare.com/v1/chat/completions -H 'Authorization: Bearer selfheal-e2e-key' -H 'Content-Type: application/json' -d '{\"model\":\"local\",\"messages\":[{\"role\":\"user\",\"content\":\"hello\"}],\"max_tokens\":200}'\n"}
+,{"stream_name":"stdout","time":2684.84462209,"data":"[ 41 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":2744.882394699,"data":"[ 42 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":2804.920878065,"data":"[ 43 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":2864.959482324,"data":"[ 44 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":2924.998332639,"data":"[ 45 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":2985.036062878,"data":"[ 46 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":3045.075164185,"data":"[ 47 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":3105.11309293,"data":"[ 48 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":3165.150741214,"data":"[ 49 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":3225.156077158,"data":"\n"}
+,{"stream_name":"stdout","time":3225.15612653,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":3225.156132032,"data":"ENDPOINT LIVE\n"}
+,{"stream_name":"stdout","time":3225.156135764,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":3225.15613986,"data":"URL      : https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":3225.15614345,"data":"API key  : selfheal-e2e-key\n"}
+,{"stream_name":"stdout","time":3225.156147268,"data":"Model    : Qwen3.8-27B-UD-Q4_K_XL.gguf (17.6 GB, UD-Q4_K_XL)\n"}
+,{"stream_name":"stdout","time":3225.156160827,"data":"Context  : 131072 tokens\n"}
+,{"stream_name":"stdout","time":3225.156163686,"data":"VRAM     : 26566 / 30720 MiB\n"}
+,{"stream_name":"stdout","time":3225.156166268,"data":"SPEED    : 23.9 tok/s avg, 24.4 tok/s best\n"}
+,{"stream_name":"stdout","time":3225.156168855,"data":"\n"}
+,{"stream_name":"stdout","time":3225.156171401,"data":"curl https://telecom-shuttle-kind-cds.trycloudflare.com/v1/models -H 'Authorization: Bearer selfheal-e2e-key'\n"}
+,{"stream_name":"stdout","time":3225.15617418,"data":"\n"}
+,{"stream_name":"stdout","time":3225.156176736,"data":"curl https://telecom-shuttle-kind-cds.trycloudflare.com/v1/chat/completions -H 'Authorization: Bearer selfheal-e2e-key' -H 'Content-Type: application/json' -d '{\"model\":\"local\",\"messages\":[{\"role\":\"user\",\"content\":\"hello\"}],\"max_tokens\":200}'\n"}
+,{"stream_name":"stdout","time":3285.196037319,"data":"[ 51 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":3345.234319015,"data":"[ 52 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":3405.273750115,"data":"[ 53 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":3465.312875935,"data":"[ 54 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":3525.351556004,"data":"[ 55 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":3585.390367759,"data":"[ 56 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":3645.428501172,"data":"[ 57 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":3705.467782737,"data":"[ 58 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":3765.507521015,"data":"[ 59 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":3825.512472207,"data":"\n"}
+,{"stream_name":"stdout","time":3825.512504599,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":3825.512508826,"data":"ENDPOINT LIVE\n"}
+,{"stream_name":"stdout","time":3825.512512014,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":3825.512515442,"data":"URL      : https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":3825.512534607,"data":"API key  : selfheal-e2e-key\n"}
+,{"stream_name":"stdout","time":3825.512539857,"data":"Model    : Qwen3.8-27B-UD-Q4_K_XL.gguf (17.6 GB, UD-Q4_K_XL)\n"}
+,{"stream_name":"stdout","time":3825.512545086,"data":"Context  : 131072 tokens\n"}
+,{"stream_name":"stdout","time":3825.512550196,"data":"VRAM     : 26566 / 30720 MiB\n"}
+,{"stream_name":"stdout","time":3825.512555146,"data":"SPEED    : 23.9 tok/s avg, 24.4 tok/s best\n"}
+,{"stream_name":"stdout","time":3825.512559486,"data":"\n"}
+,{"stream_name":"stdout","time":3825.512563767,"data":"curl https://telecom-shuttle-kind-cds.trycloudflare.com/v1/models -H 'Authorization: Bearer selfheal-e2e-key'\n"}
+,{"stream_name":"stdout","time":3825.512570041,"data":"\n"}
+,{"stream_name":"stdout","time":3825.51257759,"data":"curl https://telecom-shuttle-kind-cds.trycloudflare.com/v1/chat/completions -H 'Authorization: Bearer selfheal-e2e-key' -H 'Content-Type: application/json' -d '{\"model\":\"local\",\"messages\":[{\"role\":\"user\",\"content\":\"hello\"}],\"max_tokens\":200}'\n"}
+,{"stream_name":"stdout","time":3885.553361023,"data":"[ 61 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":3945.594027946,"data":"[ 62 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":4005.634346302,"data":"[ 63 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":4065.67345986,"data":"[ 64 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":4125.71317304,"data":"[ 65 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":4185.751925023,"data":"[ 66 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":4245.793102922,"data":"[ 67 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":4305.832770252,"data":"[ 68 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":4365.8755712,"data":"[ 69 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":4425.880520915,"data":"\n"}
+,{"stream_name":"stdout","time":4425.880560494,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":4425.88057168,"data":"ENDPOINT LIVE\n"}
+,{"stream_name":"stdout","time":4425.880575183,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":4425.880578621,"data":"URL      : https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":4425.880581683,"data":"API key  : selfheal-e2e-key\n"}
+,{"stream_name":"stdout","time":4425.880584558,"data":"Model    : Qwen3.8-27B-UD-Q4_K_XL.gguf (17.6 GB, UD-Q4_K_XL)\n"}
+,{"stream_name":"stdout","time":4425.88058749,"data":"Context  : 131072 tokens\n"}
+,{"stream_name":"stdout","time":4425.880590466,"data":"VRAM     : 26566 / 30720 MiB\n"}
+,{"stream_name":"stdout","time":4425.880593287,"data":"SPEED    : 23.9 tok/s avg, 24.4 tok/s best\n"}
+,{"stream_name":"stdout","time":4425.880596142,"data":"\n"}
+,{"stream_name":"stdout","time":4425.880598932,"data":"curl https://telecom-shuttle-kind-cds.trycloudflare.com/v1/models -H 'Authorization: Bearer selfheal-e2e-key'\n"}
+,{"stream_name":"stdout","time":4425.880602069,"data":"\n"}
+,{"stream_name":"stdout","time":4425.880604983,"data":"curl https://telecom-shuttle-kind-cds.trycloudflare.com/v1/chat/completions -H 'Authorization: Bearer selfheal-e2e-key' -H 'Content-Type: application/json' -d '{\"model\":\"local\",\"messages\":[{\"role\":\"user\",\"content\":\"hello\"}],\"max_tokens\":200}'\n"}
+,{"stream_name":"stdout","time":4485.921084147,"data":"[ 71 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":4545.963122818,"data":"[ 72 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":4606.002932529,"data":"[ 73 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":4666.042867333,"data":"[ 74 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":4726.083738631,"data":"[ 75 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":4786.124803552,"data":"[ 76 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":4846.166020936,"data":"[ 77 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":4906.207609144,"data":"[ 78 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":4966.248094563,"data":"[ 79 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":5026.253682424,"data":"\n"}
+,{"stream_name":"stdout","time":5026.253745447,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":5026.253753929,"data":"ENDPOINT LIVE\n"}
+,{"stream_name":"stdout","time":5026.253759229,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":5026.253768101,"data":"URL      : https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":5026.253771617,"data":"API key  : selfheal-e2e-key\n"}
+,{"stream_name":"stdout","time":5026.253774751,"data":"Model    : Qwen3.8-27B-UD-Q4_K_XL.gguf (17.6 GB, UD-Q4_K_XL)\n"}
+,{"stream_name":"stdout","time":5026.253777968,"data":"Context  : 131072 tokens\n"}
+,{"stream_name":"stdout","time":5026.25378107,"data":"VRAM     : 26566 / 30720 MiB\n"}
+,{"stream_name":"stdout","time":5026.253784135,"data":"SPEED    : 23.9 tok/s avg, 24.4 tok/s best\n"}
+,{"stream_name":"stdout","time":5026.253787239,"data":"\n"}
+,{"stream_name":"stdout","time":5026.253790255,"data":"curl https://telecom-shuttle-kind-cds.trycloudflare.com/v1/models -H 'Authorization: Bearer selfheal-e2e-key'\n"}
+,{"stream_name":"stdout","time":5026.253793529,"data":"\n"}
+,{"stream_name":"stdout","time":5026.253796721,"data":"curl https://telecom-shuttle-kind-cds.trycloudflare.com/v1/chat/completions -H 'Authorization: Bearer selfheal-e2e-key' -H 'Content-Type: application/json' -d '{\"model\":\"local\",\"messages\":[{\"role\":\"user\",\"content\":\"hello\"}],\"max_tokens\":200}'\n"}
+,{"stream_name":"stdout","time":5086.294187354,"data":"[ 81 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":5146.334892444,"data":"[ 82 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":5206.375147964,"data":"[ 83 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":5266.41655202,"data":"[ 84 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":5326.458081058,"data":"[ 85 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":5386.497351476,"data":"[ 86 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":5446.535228416,"data":"[ 87 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":5506.574386675,"data":"[ 88 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":5566.614961801,"data":"[ 89 min] vram=26638 MiB URL=https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":5626.620024805,"data":"\n"}
+,{"stream_name":"stdout","time":5626.62008752,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":5626.620095199,"data":"ENDPOINT LIVE\n"}
+,{"stream_name":"stdout","time":5626.620100977,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":5626.620106334,"data":"URL      : https://telecom-shuttle-kind-cds.trycloudflare.com\n"}
+,{"stream_name":"stdout","time":5626.620111649,"data":"API key  : selfheal-e2e-key\n"}
+,{"stream_name":"stdout","time":5626.620126755,"data":"Model    : Qwen3.8-27B-UD-Q4_K_XL.gguf (17.6 GB, UD-Q4_K_XL)\n"}
+,{"stream_name":"stdout","time":5626.620130596,"data":"Context  : 131072 tokens\n"}
+,{"stream_name":"stdout","time":5626.62013413,"data":"VRAM     : 26566 / 30720 MiB\n"}
+,{"stream_name":"stdout","time":5626.620142748,"data":"SPEED    : 23.9 tok/s avg, 24.4 tok/s best\n"}
+,{"stream_name":"stdout","time":5626.620145955,"data":"\n"}
+,{"stream_name":"stdout","time":5626.620148342,"data":"curl https://telecom-shuttle-kind-cds.trycloudflare.com/v1/models -H 'Authorization: Bearer selfheal-e2e-key'\n"}
+,{"stream_name":"stdout","time":5626.620153703,"data":"\n"}
+,{"stream_name":"stdout","time":5626.620156139,"data":"curl https://telecom-shuttle-kind-cds.trycloudflare.com/v1/chat/completions -H 'Authorization: Bearer selfheal-e2e-key' -H 'Content-Type: application/json' -d '{\"model\":\"local\",\"messages\":[{\"role\":\"user\",\"content\":\"hello\"}],\"max_tokens\":200}'\n"}
+,{"stream_name":"stdout","time":5626.620160498,"data":"window elapsed\n"}
+,{"stream_name":"stderr","time":5630.453632751,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":5630.453729856,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":5631.082873496,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":5631.082901191,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":5634.468201253,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":5636.163046286,"data":"[NbConvertApp] Writing 337584 bytes to __results__.html\n"}
+]

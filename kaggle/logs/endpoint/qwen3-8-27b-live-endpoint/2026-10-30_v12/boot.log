@@ -1,0 +1,9 @@
+GPU: Tesla T4, 15360 MiB | Tesla T4, 15360 MiB | total 30720 MiB
+DOWNLOADING MODEL unsloth-ud-q4kxl (unsloth/Qwen3.8-27B-GGUF)
+  got 17.6 GB in 91s
+TRYING ctx = 131072
+  booted. VRAM 26566 / 30720 MiB. benchmarking...
+SELECTED ctx=131072 | VRAM 26566/30720 MiB | 23.8 tok/s avg (best 24.4)
+  tensor split engaged: True  (per-GPU [13287, 13287], symmetric == engaged)
+  MTP engaged         : True  (accept_rate 0.64)
+URL      : https://spent-behavior-married-disk.trycloudflare.com

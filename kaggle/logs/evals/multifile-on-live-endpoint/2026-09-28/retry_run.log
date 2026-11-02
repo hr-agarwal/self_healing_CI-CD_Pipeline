@@ -1,0 +1,7 @@
+r0 R  helper_throws                  func=1 file=src/format.js      cands=['src/format.js'] tok=795    72.0s 
+r0 R  test_exposes_latent_bug        func=1 file=src/format.js      cands=['src/format.js'] tok=1178   51.6s 
+r1 R  helper_throws                  func=1 file=src/format.js      cands=['src/format.js'] tok=624    29.3s 
+r1 R  test_exposes_latent_bug        func=1 file=src/format.js      cands=['src/format.js'] tok=1189   47.9s 
+r2 R  helper_throws                  func=1 file=src/format.js      cands=['src/format.js'] tok=690    31.7s 
+r2 R  test_exposes_latent_bug        func=1 file=src/format.js      cands=['src/format.js'] tok=1053   43.9s 
+ARM R  retry heals 6/6 of the applied-but-failed first attempts

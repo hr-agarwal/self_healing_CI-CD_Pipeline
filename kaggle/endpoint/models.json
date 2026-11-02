@@ -1,0 +1,34 @@
+{
+  "_about": "Models the Kaggle endpoint can serve. kaggle/tools/build_endpoint.py writes the chosen entry into the pushed kernel (default: 'default'). 'pattern' is a regex matched against the repo's file paths and must hit exactly one GGUF. Every entry needs an MTP build: without MTP the endpoint is ~40% slower (15.5 vs 26.8 tok/s, docs/results/SPEED_LEVERS_EVAL.md).",
+  "default": "unsloth-ud-q4kxl",
+  "models": {
+    "unsloth-ud-q4kxl": {
+      "repo": "unsloth/Qwen3.8-27B-GGUF",
+      "pattern": "UD-Q4_K_XL\\.gguf$",
+      "fallbacks": [["unsloth/Qwen3.8-27B-GGUF", "UD-Q4_K_M\\.gguf$"], ["unsloth/Qwen3.8-27B-GGUF", "UD-Q6_K\\.gguf$"]],
+      "gb": 17.6,
+      "note": "Production since 2026-09-22. Measured: 15/15 control, 12/18 hard fast pass, 24-30 tok/s live. BAKE-OFF 2026-10-30 winner: F 14/24, T 21/24, 23.4 tok/s."
+    },
+    "fable-cold-fusion-735": {
+      "repo": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+      "pattern": "NEO-CODER-MAX-MTP-Q4_K_M\\.gguf$",
+      "fallbacks": [],
+      "gb": 18.5,
+      "note": "Bake-off candidate. Fable Cold Fusion, coder-tuned. Self-reported ARC-C 0.735 (base 0.591). MTP tensors at Q8_0. BAKE-OFF 2026-10-30: F 14/24, T 15/24, 17.6 tok/s (75%) - lost."
+    },
+    "jumbo-fusion-747": {
+      "repo": "DavidAU/Qwen3.8-27B-Jumbo-Fusion-IQ-747-900-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF",
+      "pattern": "NEO-MTP-Q4_K_M\\.gguf$",
+      "fallbacks": [],
+      "gb": 16.8,
+      "note": "Bake-off candidate. Reasoning fusion of 20 models, terse output, fewer thinking tokens. Self-reported ARC-C 0.747; card warns coding may be weaker. BAKE-OFF 2026-10-30: controls 8/10 (ineligible), F 14/24, T 16/24, 19.3 tok/s - lost."
+    },
+    "coder390-efficientthink": {
+      "repo": "nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2",
+      "pattern": "Q4LynnStyle-Q8MTP\\.gguf$",
+      "fallbacks": [],
+      "gb": 19.8,
+      "note": "Bake-off candidate. Coding + efficient-thinking post-train (SFT/RLOO), MTP head at Q8. BAKE-OFF 2026-10-30: F 14/24, T 17/24, 16.9 tok/s (72%) - lost."
+    }
+  }
+}

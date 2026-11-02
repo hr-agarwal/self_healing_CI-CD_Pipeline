@@ -1,0 +1,21 @@
+{
+  "id": "lacrimatct/qwen3-8-shipped-quality-eval",
+  "title": "Qwen3.8 Shipped Quality Eval",
+  "code_file": "qwen3-8-shipped-quality-eval.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [],
+  "kernel_sources": [
+    "linsxav/llama-server-builder"
+  ],
+  "competition_sources": [],
+  "model_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}
