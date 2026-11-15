@@ -6,7 +6,7 @@ function formatGreeting(name) {
 }
 
 function formatSum(a, b) {
-  return { a, b, sum: a - b };
+  return { a, b, sum: a + b };
 }
 
 module.exports = { formatGreeting, formatSum };
